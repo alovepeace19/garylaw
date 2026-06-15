@@ -1,0 +1,1220 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gary Law for Richmond City Council | Law for Safety, Law for Richmond</title>
+    <meta name="description" content="Official campaign of Gary Law, candidate for Richmond City Council. Former RCMP Senior Officer, 30+ year resident, and community advocate committed to safety, transparency, and a livable Richmond.">
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        navy: {
+                            50: '#f4f6f9',
+                            100: '#e9edf3',
+                            200: '#c8d2e1',
+                            300: '#97acca',
+                            400: '#5f7fae',
+                            500: '#3e5e92',
+                            600: '#2e4a77',
+                            700: '#243b60',
+                            800: '#062B5B', // Primary Campaign Navy
+                            900: '#052248',
+                            950: '#03142d',
+                        },
+                        campaignRed: {
+                            50: '#fef3f3',
+                            100: '#fee5e6',
+                            200: '#fccfd1',
+                            300: '#faa1a5',
+                            400: '#f66970',
+                            500: '#eb3c46',
+                            600: '#D72638', // Campaign Red
+                            700: '#b41928',
+                            800: '#951724',
+                            900: '#7c1722',
+                            950: '#44080e',
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+    </style>
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ProfilePage",
+      "mainEntity": {
+        "@type": "Person",
+        "name": "Gary Law",
+        "description": "Former RCMP Senior Officer, 30+ year Richmond resident running for Richmond City Council.",
+        "jobTitle": "Candidate for Richmond City Council",
+        "affiliation": {
+          "@type": "Organization",
+          "name": "Richmond City Council Campaign"
+        },
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Richmond",
+          "addressRegion": "British Columbia",
+          "addressCountry": "Canada"
+        },
+        "knowsAbout": [
+          "Community Safety",
+          "Traffic Management",
+          "Municipal Transparency",
+          "Seniors and Family Public Support Systems",
+          "Livable City Planning"
+        ],
+        "award": "RCMP Police Community Relations Award"
+      }
+    }
+    </script>
+</head>
+<body class="bg-white text-gray-900 flex flex-col min-h-screen">
+
+    <!-- Navigation Header -->
+    <header class="sticky top-0 z-40 bg-white border-b border-gray-100 shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                
+                <!-- Brand Identity -->
+                <a href="#hero" class="flex flex-col group">
+                    <span class="text-2xl font-black tracking-tight text-navy-800 leading-none group-hover:text-campaignRed-600 transition-colors uppercase">
+                        GARY LAW
+                    </span>
+                    <span class="text-[11px] font-bold tracking-widest text-campaignRed-600 uppercase mt-1">
+                        Richmond City Council
+                    </span>
+                </a>
+
+                <!-- Desktop Navigation Menu -->
+                <nav class="hidden md:flex space-x-8 text-xs font-bold uppercase tracking-wider">
+                    <a href="#hero" class="text-navy-800 hover:text-campaignRed-600 transition-colors py-1">Home</a>
+                    <a href="#about" class="text-gray-500 hover:text-navy-800 transition-colors py-1">About</a>
+                    <a href="#priorities" class="text-gray-500 hover:text-navy-800 transition-colors py-1">Priorities</a>
+                    <a href="#awards" class="text-gray-500 hover:text-navy-800 transition-colors py-1">Awards</a>
+                    <a href="#faq" class="text-gray-500 hover:text-navy-800 transition-colors py-1">FAQ</a>
+                    <a href="#connect" class="text-gray-500 hover:text-navy-800 transition-colors py-1">Contact</a>
+                </nav>
+
+                <!-- Volunteer CTA Button -->
+                <div class="hidden md:flex">
+                    <a href="#connect" class="bg-campaignRed-600 hover:bg-campaignRed-700 text-white text-xs font-bold uppercase tracking-widest py-3.5 px-6 rounded shadow-md hover:shadow-lg transition-all transform hover:-translate-y-0.5">
+                        Get Involved
+                    </a>
+                </div>
+
+                <!-- Mobile Navigation Toggle -->
+                <div class="md:hidden">
+                    <button type="button" onclick="toggleMobileMenu()" class="text-navy-800 hover:text-campaignRed-600 focus:outline-none p-2" aria-label="Toggle Navigation Menu">
+                        <svg class="h-6 w-6" id="menuIcon" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div class="hidden md:hidden bg-white border-t border-gray-100" id="mobileMenu">
+            <div class="px-4 pt-2 pb-6 space-y-3 font-semibold text-sm uppercase tracking-wider">
+                <a href="#hero" onclick="toggleMobileMenu()" class="block px-3 py-2.5 rounded-md text-gray-700 hover:bg-gray-50 hover:text-navy-800">Home</a>
+                <a href="#about" onclick="toggleMobileMenu()" class="block px-3 py-2.5 rounded-md text-gray-700 hover:bg-gray-50 hover:text-navy-800">About Gary</a>
+                <a href="#priorities" onclick="toggleMobileMenu()" class="block px-3 py-2.5 rounded-md text-gray-700 hover:bg-gray-50 hover:text-navy-800">Key Priorities</a>
+                <a href="#awards" onclick="toggleMobileMenu()" class="block px-3 py-2.5 rounded-md text-gray-700 hover:bg-gray-50 hover:text-navy-800">Awards</a>
+                <a href="#faq" onclick="toggleMobileMenu()" class="block px-3 py-2.5 rounded-md text-gray-700 hover:bg-gray-50 hover:text-navy-800">FAQ</a>
+                <a href="#connect" onclick="toggleMobileMenu()" class="block px-3 py-2.5 rounded-md text-gray-700 hover:bg-gray-50 hover:text-navy-800">Contact</a>
+                <div class="pt-2">
+                    <a href="#connect" onclick="toggleMobileMenu()" class="block w-full text-center bg-campaignRed-600 hover:bg-campaignRed-700 text-white font-bold uppercase tracking-wider py-3 rounded shadow">
+                        Volunteer
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Custom Dialog Toast -->
+    <div id="toast" class="fixed bottom-5 right-5 z-50 transform translate-y-20 opacity-0 pointer-events-none transition-all duration-300 ease-out bg-navy-800 border-l-4 border-campaignRed-600 text-white px-6 py-4 rounded shadow-2xl max-w-sm flex items-start gap-3">
+        <div class="mt-0.5"><i data-lucide="check-circle" class="w-5 h-5 text-campaignRed-500"></i></div>
+        <div>
+            <h4 class="font-bold text-sm tracking-wide">Submission Received</h4>
+            <p id="toastMessage" class="text-xs text-gray-200 mt-1">Thank you for connecting with the campaign.</p>
+        </div>
+    </div>
+
+    <!-- MAIN APP CONTENT PANELS -->
+    <main class="flex-grow">
+
+        <!-- SECTION 1: HERO -->
+        <section id="hero" class="relative bg-white pt-12 pb-16 md:py-24 overflow-hidden border-b border-gray-100">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center">
+                    
+                    <!-- Left Hero Column -->
+                    <div class="lg:col-span-7 space-y-8">
+                        <header class="space-y-3">
+                            <span class="text-xs font-black tracking-widest text-campaignRed-600 uppercase bg-campaignRed-50 px-3 py-1.5 inline-block">
+                                Richmond City Council Candidate
+                            </span>
+                            <h1 class="text-6xl sm:text-7xl font-black text-navy-800 tracking-tight leading-none uppercase">
+                                GARY LAW
+                            </h1>
+                        </header>
+
+                        <div class="border-l-4 border-campaignRed-600 pl-6 py-2">
+                            <p class="text-3xl sm:text-4xl font-black text-navy-800 tracking-tight leading-snug uppercase">
+                                LAW FOR SAFETY.<br>
+                                LAW FOR RICHMOND.
+                            </p>
+                        </div>
+
+                        <p class="text-base sm:text-lg text-gray-600 leading-relaxed font-semibold max-w-xl">
+                            Former RCMP Senior Officer.<br>
+                            Community Policing Award Recipient.
+                        </p>
+
+                        <div class="flex flex-wrap gap-4 pt-4">
+                            <a href="#priorities" class="inline-flex items-center justify-center bg-navy-800 hover:bg-navy-950 text-white font-bold uppercase tracking-wider py-4 px-8 shadow-md hover:shadow-xl transition-all transform hover:-translate-y-0.5 text-xs">
+                                Gary's Plan for Richmond
+                            </a>
+                            <a href="#connect" class="inline-flex items-center justify-center bg-transparent border-2 border-navy-800 text-navy-800 hover:bg-navy-50 font-bold uppercase tracking-wider py-4 px-8 transition-all text-xs">
+                                Contact
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Right Hero Column: Campaign Photo Area -->
+                    <div class="lg:col-span-5 relative">
+                      <div class="relative w-full max-w-md mx-auto lg:ml-auto">
+
+                        <!-- Red / Navy background blocks -->
+                        <div class="absolute -top-6 -left-6 w-32 h-32 bg-campaignRed-600 opacity-10 rounded-full"></div>
+                        <div class="absolute -bottom-6 -right-6 w-40 h-40 bg-navy-800 opacity-10 rounded-full"></div>
+
+                        <!-- Main photo frame -->
+                        <div class="relative overflow-hidden rounded-none bg-gray-100 shadow-2xl border-b-8 border-campaignRed-600 h-[520px]">
+
+                          <img
+                            src="https://garylaw.ca/wp-content/uploads/2026/06/gary-law-portrait.jpg"
+                            alt="Gary Law, Richmond City Council candidate and former RCMP Senior Officer"
+                            class="w-full h-full object-cover object-center relative z-10"
+                            onerror="this.style.display='none'; document.getElementById('hero-fallback').classList.remove('hidden');"
+                          >
+
+                          <!-- Vector fallback layout for development/sandboxes -->
+                          <div id="hero-fallback" class="hidden absolute inset-0 bg-gradient-to-br from-navy-800 to-navy-950 flex flex-col items-center justify-center p-8 text-center select-none">
+                            <div class="w-32 h-32 rounded-full border-4 border-campaignRed-600 flex items-center justify-center mb-6 shadow-inner bg-navy-900/50">
+                              <span class="text-5xl font-black text-white tracking-widest pl-1">GL</span>
+                            </div>
+                            <div class="space-y-2">
+                              <p class="text-xs font-black uppercase tracking-widest text-campaignRed-500">Campaign Platform</p>
+                              <h3 class="text-2xl font-bold text-white tracking-tight">LAW FOR SAFETY</h3>
+                              <p class="text-xs text-gray-400 uppercase tracking-widest">Richmond, British Columbia</p>
+                            </div>
+                          </div>
+
+                          <!-- Bottom campaign strip -->
+                          <div class="absolute bottom-0 left-0 right-0 bg-navy-800/95 text-white px-6 py-5 z-20">
+                            <p class="text-xs font-extrabold tracking-widest uppercase text-campaignRed-300 mb-1">
+                              Former RCMP Senior Officer
+                            </p>
+                            <h2 class="text-2xl font-black tracking-tight uppercase">
+                              Gary Law
+                            </h2>
+                            <p class="text-sm text-gray-200 mt-1">
+                              30+ Year Richmond Resident · Community Advocate
+                            </p>
+                          </div>
+                        </div>
+
+                        <!-- Small trust badge -->
+                        <div class="absolute -bottom-5 left-6 bg-white shadow-xl border border-gray-100 px-5 py-3 z-20">
+                          <p class="text-xs font-black text-navy-800 uppercase tracking-wider">
+                            Police Community Relations Award
+                          </p>
+                        </div>
+
+                      </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION 1.2: GARY CREDENTIALS / TRUST INDICATORS -->
+        <section class="bg-gray-50 py-8 border-b border-gray-100">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="grid grid-cols-2 lg:grid-cols-4 gap-6 items-center">
+                    
+                    <!-- Indicator 1 -->
+                    <div class="flex items-center gap-4 bg-white p-4 rounded-xl border border-gray-100 shadow-sm">
+                        <span class="bg-navy-50 text-navy-800 p-2.5 rounded-lg">
+                            <i data-lucide="shield" class="w-5 h-5 text-navy-800"></i>
+                        </span>
+                        <div>
+                            <span class="text-xs text-gray-400 uppercase font-bold tracking-wider block">Background</span>
+                            <span class="text-sm font-bold text-navy-800 leading-snug">Former RCMP Officer</span>
+                        </div>
+                    </div>
+
+                    <!-- Indicator 2 -->
+                    <div class="flex items-center gap-4 bg-white p-4 rounded-xl border border-gray-100 shadow-sm">
+                        <span class="bg-navy-50 text-navy-800 p-2.5 rounded-lg">
+                            <i data-lucide="map-pin" class="w-5 h-5 text-navy-800"></i>
+                        </span>
+                        <div>
+                            <span class="text-xs text-gray-400 uppercase font-bold tracking-wider block">Roots</span>
+                            <span class="text-sm font-bold text-navy-800 leading-snug">Richmond Res. 30+ Yrs</span>
+                        </div>
+                    </div>
+
+                    <!-- Indicator 3 -->
+                    <div class="flex items-center gap-4 bg-white p-4 rounded-xl border border-gray-100 shadow-sm">
+                        <span class="bg-navy-50 text-navy-800 p-2.5 rounded-lg">
+                            <i data-lucide="users" class="w-5 h-5 text-navy-800"></i>
+                        </span>
+                        <div>
+                            <span class="text-xs text-gray-400 uppercase font-bold tracking-wider block">Leadership</span>
+                            <span class="text-sm font-bold text-navy-800 leading-snug">Youth Dev. Mentor</span>
+                        </div>
+                    </div>
+
+                    <!-- Indicator 4 -->
+                    <div class="flex items-center gap-4 bg-white p-4 rounded-xl border border-gray-100 shadow-sm">
+                        <span class="bg-navy-50 text-navy-800 p-2.5 rounded-lg">
+                            <i data-lucide="heart" class="w-5 h-5 text-navy-800"></i>
+                        </span>
+                        <div>
+                            <span class="text-xs text-gray-400 uppercase font-bold tracking-wider block">Advocacy</span>
+                            <span class="text-sm font-bold text-navy-800 leading-snug">Community Advocate</span>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION 2: MEET GARY LAW -->
+        <section id="about" class="bg-gray-50 py-16 md:py-24 border-b border-gray-100">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                    
+                    <!-- Side Portrait Container with Elegant Vector fallback -->
+                    <div class="lg:col-span-5 relative">
+                        <div class="relative overflow-hidden rounded-xl bg-gray-100 shadow-xl border-b-4 border-campaignRed-600 h-[450px]">
+                            <img
+                              src="https://garylaw.ca/wp-content/uploads/2026/06/gary-law-about.jpg"
+                              alt="Gary Law Profile Photo"
+                              class="w-full h-full object-cover object-center relative z-10"
+                              onerror="this.style.display='none'; document.getElementById('about-fallback').classList.remove('hidden');"
+                            >
+                            <!-- Elegant vector placeholder replaces broken image icons gracefully -->
+                            <div id="about-fallback" class="hidden absolute inset-0 bg-gradient-to-br from-navy-800 to-navy-950 flex flex-col items-center justify-center p-8 text-center select-none">
+                              <div class="w-24 h-24 rounded-full border-4 border-campaignRed-600 flex items-center justify-center mb-4 shadow-inner bg-navy-900/50">
+                                <i data-lucide="shield" class="w-10 h-10 text-white"></i>
+                              </div>
+                              <div class="space-y-1">
+                                <h3 class="text-xl font-bold text-white uppercase tracking-tight">Gary Law</h3>
+                                <p class="text-xs text-campaignRed-500 uppercase font-black tracking-widest">30+ Years of Local Service</p>
+                                <p class="text-[11px] text-gray-400 max-w-xs mt-2 leading-relaxed">Dedicated to a safer, more accountable, and more livable Richmond.</p>
+                              </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Profile Info Column -->
+                    <div class="lg:col-span-7 space-y-6">
+                        <span class="text-xs font-extrabold text-campaignRed-600 tracking-widest uppercase">The Leadership We Need</span>
+                        <h2 class="text-3xl sm:text-4xl font-extrabold text-navy-800 tracking-tight">Meet Gary Law</h2>
+                        
+                        <p class="text-gray-600 text-sm leading-relaxed">
+                            Gary has spent his career in municipal security, defense management, and proactive localized leadership. His experience is rooted directly in collaborative, community-led initiatives that focus on actionable solutions for Richmond.
+                        </p>
+
+                        <!-- Highlights list -->
+                        <ul class="space-y-4">
+                            <li class="flex items-start gap-3">
+                                <span class="bg-white p-1.5 rounded shadow-sm text-campaignRed-600 mt-0.5"><i data-lucide="check" class="w-4 h-4"></i></span>
+                                <div>
+                                    <strong class="text-navy-800 text-sm block">Former RCMP Senior Officer</strong>
+                                    <span class="text-xs text-gray-500">Over three decades of frontline structural crisis coordination and strategic organizational leadership.</span>
+                                </div>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <span class="bg-white p-1.5 rounded shadow-sm text-campaignRed-600 mt-0.5"><i data-lucide="check" class="w-4 h-4"></i></span>
+                                <div>
+                                    <strong class="text-navy-800 text-sm block">Richmond Resident for 30+ Years</strong>
+                                    <span class="text-xs text-gray-500">A dedicated neighbor and community advocate with deep roots in local cultural, educational, and civic structures.</span>
+                                </div>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <span class="bg-white p-1.5 rounded shadow-sm text-campaignRed-600 mt-0.5"><i data-lucide="check" class="w-4 h-4"></i></span>
+                                <div>
+                                    <strong class="text-navy-800 text-sm block">Recipient of RCMP Police Community Relations Awards</strong>
+                                    <span class="text-xs text-gray-500">Specifically honored for leadership in organizing youth safety workshops and cross-community dialogues.</span>
+                                </div>
+                            </li>
+                        </ul>
+
+                        <div class="pt-2">
+                            <a href="#aboutDetailed" onclick="toggleBiographyModal(true)" class="text-sm font-bold tracking-wider uppercase text-campaignRed-600 hover:text-campaignRed-700 transition-colors inline-flex items-center gap-2 border-b-2 border-campaignRed-600 pb-1 hover:border-campaignRed-700">
+                                About Gary Law
+                                <i data-lucide="arrow-right" class="w-4 h-4"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION 3: KEY PRIORITIES -->
+        <section id="priorities" class="bg-white py-16 md:py-24 border-b border-gray-100">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                
+                <header class="text-center max-w-3xl mx-auto space-y-4 mb-16">
+                    <span class="text-xs font-extrabold text-campaignRed-600 tracking-widest uppercase">Platform Pillars</span>
+                    <h2 class="text-3xl sm:text-4xl font-extrabold text-navy-800 tracking-tight">Key Priorities</h2>
+                    <p class="text-gray-600 text-sm">Strategic objectives focused on creating safe neighborhoods, transparent municipal administration, and smart, sustainable infrastructure.</p>
+                </header>
+
+                <!-- Priority Cards Grid -->
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    
+                    <!-- Card 1: Community Safety -->
+                    <button type="button" onclick="openPriorityModal('safety')" class="group text-left block bg-white border border-gray-100 rounded-xl p-6 shadow-sm hover:shadow-xl hover:border-navy-200 transition-all duration-300 transform hover:-translate-y-1 w-full">
+                        <div class="flex items-center justify-between mb-4">
+                            <span class="bg-navy-50 text-navy-800 p-3 rounded-lg group-hover:bg-campaignRed-50 group-hover:text-campaignRed-600 transition-all">
+                                <i data-lucide="shield" class="w-6 h-6"></i>
+                            </span>
+                            <span class="text-gray-300 group-hover:text-campaignRed-600 transition-colors">
+                                <i data-lucide="arrow-up-right" class="w-5 h-5"></i>
+                            </span>
+                        </div>
+                        <h3 class="text-xl font-bold text-navy-800 mb-2 group-hover:text-campaignRed-600 transition-colors">Community Safety</h3>
+                        <p class="text-sm text-gray-600 leading-relaxed">
+                            Proactive block watches, dedicated youth protection systems, and collaborative mental health crisis response teams.
+                        </p>
+                    </button>
+
+                    <!-- Card 2: Traffic & Transportation -->
+                    <button type="button" onclick="openPriorityModal('traffic')" class="group text-left block bg-white border border-gray-100 rounded-xl p-6 shadow-sm hover:shadow-xl hover:border-navy-200 transition-all duration-300 transform hover:-translate-y-1 w-full">
+                        <div class="flex items-center justify-between mb-4">
+                            <span class="bg-navy-50 text-navy-800 p-3 rounded-lg group-hover:bg-campaignRed-50 group-hover:text-campaignRed-600 transition-all">
+                                <i data-lucide="car" class="w-6 h-6"></i>
+                            </span>
+                            <span class="text-gray-300 group-hover:text-campaignRed-600 transition-colors">
+                                <i data-lucide="arrow-up-right" class="w-5 h-5"></i>
+                            </span>
+                        </div>
+                        <h3 class="text-xl font-bold text-navy-800 mb-2 group-hover:text-campaignRed-600 transition-colors">Traffic & Transportation</h3>
+                        <p class="text-sm text-gray-600 leading-relaxed">
+                            Reducing local corridor bottlenecks, and designing safe pedestrian walkways near schools and local transit hubs.
+                        </p>
+                    </button>
+
+                    <!-- Card 3: Transparency & Accountability -->
+                    <button type="button" onclick="openPriorityModal('transparency')" class="group text-left block bg-white border border-gray-100 rounded-xl p-6 shadow-sm hover:shadow-xl hover:border-navy-200 transition-all duration-300 transform hover:-translate-y-1 w-full">
+                        <div class="flex items-center justify-between mb-4">
+                            <span class="bg-navy-50 text-navy-800 p-3 rounded-lg group-hover:bg-campaignRed-50 group-hover:text-campaignRed-600 transition-all">
+                                <i data-lucide="eye" class="w-6 h-6"></i>
+                            </span>
+                            <span class="text-gray-300 group-hover:text-campaignRed-600 transition-colors">
+                                <i data-lucide="arrow-up-right" class="w-5 h-5"></i>
+                            </span>
+                        </div>
+                        <h3 class="text-xl font-bold text-navy-800 mb-2 group-hover:text-campaignRed-600 transition-colors">Transparency & Accountability</h3>
+                        <p class="text-sm text-gray-600 leading-relaxed">
+                            Open-book spending portals, robust external program audits, and dedicated resident review forums.
+                        </p>
+                    </button>
+
+                    <!-- Card 4: Seniors & Families -->
+                    <button type="button" onclick="openPriorityModal('seniors')" class="group text-left block bg-white border border-gray-100 rounded-xl p-6 shadow-sm hover:shadow-xl hover:border-navy-200 transition-all duration-300 transform hover:-translate-y-1 w-full">
+                        <div class="flex items-center justify-between mb-4">
+                            <span class="bg-navy-50 text-navy-800 p-3 rounded-lg group-hover:bg-campaignRed-50 group-hover:text-campaignRed-600 transition-all">
+                                <i data-lucide="smile" class="w-6 h-6"></i>
+                            </span>
+                            <span class="text-gray-300 group-hover:text-campaignRed-600 transition-colors">
+                                <i data-lucide="arrow-up-right" class="w-5 h-5"></i>
+                            </span>
+                        </div>
+                        <h3 class="text-xl font-bold text-navy-800 mb-2 group-hover:text-campaignRed-600 transition-colors">Seniors & Families</h3>
+                        <p class="text-sm text-gray-600 leading-relaxed">
+                            Protecting multi-generational community services and ensuring language-diverse recreational programming is secure.
+                        </p>
+                    </button>
+
+                    <!-- Card 5: Livable Richmond -->
+                    <button type="button" onclick="openPriorityModal('livable')" class="group text-left block bg-white border border-gray-100 rounded-xl p-6 shadow-sm hover:shadow-xl hover:border-navy-200 transition-all duration-300 transform hover:-translate-y-1 md:col-span-2 lg:col-span-1 w-full">
+                        <div class="flex items-center justify-between mb-4">
+                            <span class="bg-navy-50 text-navy-800 p-3 rounded-lg group-hover:bg-campaignRed-50 group-hover:text-campaignRed-600 transition-all">
+                                <i data-lucide="leaf" class="w-6 h-6"></i>
+                            </span>
+                            <span class="text-gray-300 group-hover:text-campaignRed-600 transition-colors">
+                                <i data-lucide="arrow-up-right" class="w-5 h-5"></i>
+                            </span>
+                        </div>
+                        <h3 class="text-xl font-bold text-navy-800 mb-2 group-hover:text-campaignRed-600 transition-colors">Livable Richmond</h3>
+                        <p class="text-sm text-gray-600 leading-relaxed">
+                            Preserving natural green ecosystems, agricultural lands, and ensuring balanced community growth.
+                        </p>
+                    </button>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION 4: POLICE COMMUNITY RELATIONS AWARD -->
+        <section id="awards" class="bg-navy-800 text-white py-16 md:py-24">
+            <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="grid grid-cols-1 md:grid-cols-12 gap-8 items-center">
+                    
+                    <div class="md:col-span-8 space-y-4">
+                        <span class="text-xs font-bold text-campaignRed-500 uppercase tracking-widest">Prestigious Recognition</span>
+                        <h2 class="text-3xl md:text-4xl font-extrabold tracking-tight">Police Community Relations Award</h2>
+                        <p class="text-gray-300 text-sm leading-relaxed max-w-3xl">
+                            Awarded for outstanding achievements in fostering dialogue across cultural lines, establishing youth mentorship programs, and creating proactive community platforms. Gary Law’s core policing principle is that safety thrives through trust, collaboration, and mutual understanding.
+                        </p>
+                    </div>
+
+                    <div class="md:col-span-4 flex justify-center md:justify-end">
+                        <button type="button" onclick="openAwardsModal()" class="inline-flex items-center justify-center bg-white hover:bg-gray-100 text-navy-800 font-bold uppercase tracking-wider text-xs py-4 px-8 rounded shadow transition-all transform hover:-translate-y-0.5">
+                            View Citation details
+                        </button>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION 5: COMMON QUESTIONS -->
+        <section id="faq" class="bg-gray-50 py-16 md:py-24 border-b border-gray-100">
+            <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+                
+                <header class="text-center space-y-4 mb-12">
+                    <span class="text-xs font-extrabold text-campaignRed-600 tracking-widest uppercase">FAQ Hub</span>
+                    <h2 class="text-3xl font-extrabold text-navy-800 tracking-tight">Common Questions About Gary Law</h2>
+                </header>
+
+                <div class="space-y-4">
+                    
+                    <!-- Accordion 1 -->
+                    <div class="border border-gray-100 rounded-lg bg-white overflow-hidden shadow-sm">
+                        <button type="button" onclick="toggleAccordion('faq-1')" class="w-full flex justify-between items-center p-5 text-left font-bold text-navy-800 hover:text-campaignRed-600 transition-colors" aria-expanded="false">
+                            <span>Who is Gary Law?</span>
+                            <span class="bg-gray-50 p-1.5 rounded-full" id="faq-1-icon">
+                                <i data-lucide="plus" class="w-4 h-4 text-navy-800"></i>
+                            </span>
+                        </button>
+                        <div id="faq-1" class="hidden">
+                            <div class="px-5 pb-5 pt-1 text-xs text-gray-600 leading-relaxed border-t border-gray-50 bg-slate-50">
+                                Gary Law is a former RCMP Senior Officer and a Richmond resident for over 30 years. Recognized with the RCMP Police Community Relations Award, he is a dedicated community mentor and safety advocate focused on transparent civic government.
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Accordion 2 -->
+                    <div class="border border-gray-100 rounded-lg bg-white overflow-hidden shadow-sm">
+                        <button type="button" onclick="toggleAccordion('faq-2')" class="w-full flex justify-between items-center p-5 text-left font-bold text-navy-800 hover:text-campaignRed-600 transition-colors" aria-expanded="false">
+                            <span>Why is Gary Law running for Richmond City Council?</span>
+                            <span class="bg-gray-50 p-1.5 rounded-full" id="faq-2-icon">
+                                <i data-lucide="plus" class="w-4 h-4 text-navy-800"></i>
+                            </span>
+                        </button>
+                        <div id="faq-2" class="hidden">
+                            <div class="px-5 pb-5 pt-1 text-xs text-gray-600 leading-relaxed border-t border-gray-50 bg-slate-50">
+                                Gary is running to apply his professional experience in security management, neighborhood safety, and inter-organizational leadership directly to the local governance framework, ensuring city policies protect Richmond families.
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Accordion 3 -->
+                    <div class="border border-gray-100 rounded-lg bg-white overflow-hidden shadow-sm">
+                        <button type="button" onclick="toggleAccordion('faq-3')" class="w-full flex justify-between items-center p-5 text-left font-bold text-navy-800 hover:text-campaignRed-600 transition-colors" aria-expanded="false">
+                            <span>What are Gary Law's priorities?</span>
+                            <span class="bg-gray-50 p-1.5 rounded-full" id="faq-3-icon">
+                                <i data-lucide="plus" class="w-4 h-4 text-navy-800"></i>
+                            </span>
+                        </button>
+                        <div id="faq-3" class="hidden">
+                            <div class="px-5 pb-5 pt-1 text-xs text-gray-600 leading-relaxed border-t border-gray-50 bg-slate-50">
+                                His platform pillars focus on five core areas: community safety, efficient traffic and transit planning, open and accountable municipal spending, specialized support programs for seniors and families, and maintaining a livable, clean Richmond.
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Accordion 4 -->
+                    <div class="border border-gray-100 rounded-lg bg-white overflow-hidden shadow-sm">
+                        <button type="button" onclick="toggleAccordion('faq-4')" class="w-full flex justify-between items-center p-5 text-left font-bold text-navy-800 hover:text-campaignRed-600 transition-colors" aria-expanded="false">
+                            <span>What is Gary Law's approach to community safety?</span>
+                            <span class="bg-gray-50 p-1.5 rounded-full" id="faq-4-icon">
+                                <i data-lucide="plus" class="w-4 h-4 text-navy-800"></i>
+                            </span>
+                        </button>
+                        <div id="faq-4" class="hidden">
+                            <div class="px-5 pb-5 pt-1 text-xs text-gray-600 leading-relaxed border-t border-gray-50 bg-slate-50">
+                                Gary champions data-driven proactive policing. This includes organizing neighborhood block watches, improving safety zones around Richmond schools, and advocating for integrated support services to efficiently resolve local public safety challenges.
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="text-center pt-8">
+                    <button type="button" onclick="toggleAccordionListModal(true)" class="text-sm font-bold tracking-wider uppercase text-campaignRed-600 hover:text-campaignRed-700 transition-colors inline-flex items-center gap-2 border-b-2 border-campaignRed-600 pb-1 hover:border-campaignRed-700">
+                        View All Questions
+                        <i data-lucide="arrow-right" class="w-4 h-4"></i>
+                    </button>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- SECTION 6: CONNECT WITH GARY LAW -->
+        <section id="connect" class="bg-white py-16 md:py-24 border-b border-gray-100">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                
+                <header class="text-center max-w-3xl mx-auto space-y-4 mb-16">
+                    <span class="text-xs font-extrabold text-campaignRed-600 tracking-widest uppercase">Get Involved</span>
+                    <h2 class="text-3xl font-extrabold text-navy-800 tracking-tight">Connect with Gary Law</h2>
+                </header>
+
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    
+                    <!-- Contact Column -->
+                    <div class="bg-gray-50 border border-gray-100 rounded-xl p-8 flex flex-col justify-between items-center text-center shadow-sm">
+                        <div class="space-y-4">
+                            <span class="bg-navy-800 text-white p-4 rounded-full inline-block">
+                                <i data-lucide="mail" class="w-6 h-6"></i>
+                            </span>
+                            <h3 class="text-xl font-bold text-navy-800">Contact</h3>
+                            <p class="text-xs text-gray-600 leading-relaxed max-w-xs">
+                                Have questions, suggestions, or localized community concerns you would like to share with Gary?
+                            </p>
+                        </div>
+                        <div class="pt-8 w-full">
+                            <button type="button" onclick="openContactFormModal('General Inquiries')" class="block w-full text-center bg-white border border-navy-800 text-navy-800 hover:bg-navy-50 font-bold text-xs uppercase tracking-wider py-3.5 px-4 rounded transition-all">
+                                Send Message
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Media Column -->
+                    <div class="bg-gray-50 border border-gray-100 rounded-xl p-8 flex flex-col justify-between items-center text-center shadow-sm">
+                        <div class="space-y-4">
+                            <span class="bg-navy-800 text-white p-4 rounded-full inline-block">
+                                <i data-lucide="newspaper" class="w-6 h-6"></i>
+                            </span>
+                            <h3 class="text-xl font-bold text-navy-800">Media</h3>
+                            <p class="text-xs text-gray-600 leading-relaxed max-w-xs">
+                                Access official statements, biography packets, high-resolution campaign photos, or schedule an interview.
+                            </p>
+                        </div>
+                        <div class="pt-8 w-full">
+                            <button type="button" onclick="openContactFormModal('Media Inquiries')" class="block w-full text-center bg-white border border-navy-800 text-navy-800 hover:bg-navy-50 font-bold text-xs uppercase tracking-wider py-3.5 px-4 rounded transition-all">
+                                Request Statement
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Volunteer Column -->
+                    <div class="bg-gray-50 border border-gray-100 rounded-xl p-8 flex flex-col justify-between items-center text-center shadow-sm">
+                        <div class="space-y-4">
+                            <span class="bg-campaignRed-600 text-white p-4 rounded-full inline-block">
+                                <i data-lucide="user-plus" class="w-6 h-6"></i>
+                            </span>
+                            <h3 class="text-xl font-bold text-navy-800">Volunteer</h3>
+                            <p class="text-xs text-gray-600 leading-relaxed max-w-xs">
+                                Support Gary by hosting a lawn sign, coordinating door-to-door walks, or helping with outreach calls.
+                            </p>
+                        </div>
+                        <div class="pt-8 w-full">
+                            <button type="button" onclick="openContactFormModal('Volunteer Registration')" class="block w-full text-center bg-campaignRed-600 hover:bg-campaignRed-700 text-white font-bold text-xs uppercase tracking-wider py-3.5 px-4 rounded shadow transition-all">
+                                Join Campaign
+                            </button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- FOOTER SECTION -->
+    <footer class="bg-navy-800 text-white border-t border-navy-900 pt-16 pb-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8 pb-12 border-b border-navy-700">
+                
+                <!-- Column 1: Core Navigation -->
+                <div class="space-y-4">
+                    <h4 class="text-xs font-extrabold tracking-widest text-campaignRed-500 uppercase">Information</h4>
+                    <ul class="space-y-2.5 text-xs text-gray-300">
+                        <li><a href="#about" class="hover:text-white transition-colors">About Gary</a></li>
+                        <li><a href="#priorities" class="hover:text-white transition-colors">Priorities</a></li>
+                        <li><a href="#faq" class="hover:text-white transition-colors">FAQ</a></li>
+                        <li><button type="button" onclick="openNewsModal()" class="hover:text-white transition-colors text-left">Campaign News</button></li>
+                        <li><a href="#connect" class="hover:text-white transition-colors">Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- Column 2: Secondary Options -->
+                <div class="space-y-4">
+                    <h4 class="text-xs font-extrabold tracking-widest text-campaignRed-500 uppercase">Actions</h4>
+                    <ul class="space-y-2.5 text-xs text-gray-300">
+                        <li><button type="button" onclick="openContactFormModal('Volunteer')" class="hover:text-white transition-colors text-left">Volunteer</button></li>
+                        <li><button type="button" onclick="openContactFormModal('Media Statement')" class="hover:text-white transition-colors text-left">Media Resources</button></li>
+                        <li><a href="#awards" class="hover:text-white transition-colors">Awards & Recognition</a></li>
+                    </ul>
+                </div>
+
+                <!-- Column 3: Social Profiles -->
+                <div class="space-y-4">
+                    <h4 class="text-xs font-extrabold tracking-widest text-campaignRed-500 uppercase">Social</h4>
+                    <ul class="space-y-2.5 text-xs text-gray-300">
+                        <li><a href="https://facebook.com" target="_blank" rel="noopener" class="hover:text-white transition-colors flex items-center gap-2"><i data-lucide="facebook" class="w-4 h-4"></i> Facebook</a></li>
+                        <li><a href="https://instagram.com" target="_blank" rel="noopener" class="hover:text-white transition-colors flex items-center gap-2"><i data-lucide="instagram" class="w-4 h-4"></i> Instagram</a></li>
+                        <li><a href="https://linkedin.com" target="_blank" rel="noopener" class="hover:text-white transition-colors flex items-center gap-2"><i data-lucide="linkedin" class="w-4 h-4"></i> LinkedIn</a></li>
+                    </ul>
+                </div>
+
+                <!-- Column 4: Languages & Support -->
+                <div class="space-y-6">
+                    <div class="space-y-2">
+                        <h4 class="text-xs font-extrabold tracking-widest text-campaignRed-500 uppercase">Get in Touch</h4>
+                        <p class="text-[11px] text-gray-300 leading-relaxed">
+                            Email: info@garylaw.ca <br>
+                            Phone: 778-807-7497
+                        </p>
+                    </div>
+                    <div class="space-y-2">
+                        <h4 class="text-xs font-extrabold tracking-widest text-campaignRed-500 uppercase">Languages</h4>
+                        <div class="flex flex-wrap gap-2 text-[9px] font-bold uppercase tracking-wider text-gray-300">
+                            <span class="bg-navy-900 px-2 py-1 rounded">English</span>
+                            <span class="bg-navy-900 px-2 py-1 rounded">Cantonese</span>
+                            <span class="bg-navy-900 px-2 py-1 rounded">Mandarin</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Authorization Statement -->
+            <div class="pt-8 text-center md:text-left space-y-4">
+                <div class="inline-block border border-gray-600 px-6 py-3 rounded-lg text-xs font-medium text-gray-300 leading-normal max-w-2xl mx-auto md:mx-0">
+                    Authorized by Raymond Leung (778-807-7497), Financial Agent for Gary Law Campaign.
+                </div>
+                <div class="flex flex-col md:flex-row justify-between items-center gap-2 text-xs text-gray-400 font-medium">
+                    <p>&copy; 2026 Gary Law Richmond City Council Campaign. All Rights Reserved.</p>
+                    <p class="text-[10px] uppercase tracking-widest text-campaignRed-500 font-extrabold">Law for Safety. Law for Richmond.</p>
+                </div>
+            </div>
+
+        </div>
+    </footer>
+
+    <!-- INTERACTIVE PORTAL MODALS -->
+
+    <!-- Biography Detail Modal -->
+    <div id="bioModal" class="fixed inset-0 z-50 overflow-y-auto hidden" aria-labelledby="modal-title" role="dialog" aria-modal="true">
+        <div class="flex items-center justify-center min-h-screen pt-4 px-4 pb-20 text-center sm:block sm:p-0">
+            <div class="fixed inset-0 bg-gray-500 bg-opacity-75 transition-opacity" aria-hidden="true" onclick="toggleBiographyModal(false)"></div>
+            <span class="hidden sm:inline-block sm:align-middle sm:h-screen" aria-hidden="true">&#8203;</span>
+            <div class="inline-block align-bottom bg-white rounded-xl text-left overflow-hidden shadow-2xl transform transition-all sm:my-8 sm:align-middle sm:max-w-2xl sm:w-full border border-gray-100">
+                <div class="bg-navy-800 text-white px-6 py-8 relative">
+                    <button type="button" onclick="toggleBiographyModal(false)" class="absolute top-4 right-4 text-gray-300 hover:text-white p-1">
+                        <i data-lucide="x" class="w-6 h-6"></i>
+                    </button>
+                    <h3 class="text-3xl font-black uppercase tracking-tight" id="modal-title">About Gary Law</h3>
+                    <p class="text-xs text-campaignRed-500 font-extrabold uppercase tracking-widest mt-1">Decades of Dedicated Public Service</p>
+                </div>
+                <div class="bg-white px-6 py-8 space-y-6 text-sm text-gray-700 leading-relaxed">
+                    <p>
+                        Gary Law has spent his entire professional life defending public safety and advocating for community collaboration. As a former RCMP Senior Officer, Gary understands that community security is not just about police visibility; it is about cross-cultural respect, active listening, and practical strategic foresight.
+                    </p>
+                    <p>
+                        For over 30 years, Richmond has been the community where Gary chose to plant deep roots, raise his family, and dedicate his volunteer leadership. Over these decades, he has witnessed Richmond grow from a suburban city to an energetic, multi-cultural municipal hub. Gary wants to ensure that as we grow, we retain the safety, clean neighborhoods, and robust civic pride that make Richmond beautiful.
+                    </p>
+                    <div class="border-t border-gray-100 pt-6">
+                        <h4 class="font-bold text-navy-800 uppercase text-xs tracking-wider mb-4">Professional Civic Timeline</h4>
+                        <ul class="space-y-4 text-xs">
+                            <li class="relative pl-5 border-l-2 border-campaignRed-600">
+                                <strong class="text-navy-800 block">Senior RCMP Officer Career</strong>
+                                <span class="text-gray-500">Managed municipal safety strategies, directed incident responses, and initiated regional safety clinics.</span>
+                            </li>
+                            <li class="relative pl-5 border-l-2 border-campaignRed-600">
+                                <strong class="text-navy-800 block">Awarded RCMP Police Community Relations Award</strong>
+                                <span class="text-gray-500">Honored for high-level success in fostering dialogue and building bridges across cultural community divisions.</span>
+                            </li>
+                            <li class="relative pl-5 border-l-2 border-campaignRed-600">
+                                <strong class="text-navy-800 block">Youth Leadership & Mentorship Initiatives</strong>
+                                <span class="text-gray-500">Initiated peer-mentoring partnerships guiding local Richmond youth on leadership and civic accountability.</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="bg-gray-50 px-6 py-4 flex justify-end">
+                    <button type="button" onclick="toggleBiographyModal(false)" class="bg-navy-800 hover:bg-navy-900 text-white font-bold uppercase text-xs tracking-wider py-2.5 px-6 rounded transition-colors">Close Profile</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Key Priority Policy Modal -->
+    <div id="priorityModal" class="fixed inset-0 z-50 overflow-y-auto hidden" aria-labelledby="priority-modal-title" role="dialog" aria-modal="true">
+        <div class="flex items-center justify-center min-h-screen pt-4 px-4 pb-20 text-center sm:block sm:p-0">
+            <div class="fixed inset-0 bg-gray-500 bg-opacity-75 transition-opacity" aria-hidden="true" onclick="closePriorityModal()"></div>
+            <span class="hidden sm:inline-block sm:align-middle sm:h-screen" aria-hidden="true">&#8203;</span>
+            <div class="inline-block align-bottom bg-white rounded-xl text-left overflow-hidden shadow-2xl transform transition-all sm:my-8 sm:align-middle sm:max-w-2xl sm:w-full border border-gray-100">
+                <div class="bg-navy-800 text-white px-6 py-8 relative">
+                    <button type="button" onclick="closePriorityModal()" class="absolute top-4 right-4 text-gray-300 hover:text-white p-1">
+                        <i data-lucide="x" class="w-6 h-6"></i>
+                    </button>
+                    <h3 class="text-3xl font-black uppercase tracking-tight" id="priority-modal-title">Policy Proposal</h3>
+                    <p class="text-xs text-campaignRed-500 font-extrabold uppercase tracking-widest mt-1" id="priority-modal-subtitle">Platform Details</p>
+                </div>
+                <div class="bg-white px-6 py-8 space-y-6 text-sm text-gray-700 leading-relaxed" id="priority-modal-body">
+                    <!-- Dynamic Body Content -->
+                </div>
+                <div class="bg-gray-50 px-6 py-4 flex justify-between items-center">
+                    <button type="button" onclick="openContactFormModal('Priority Feedback')" class="text-campaignRed-600 hover:text-campaignRed-700 font-bold uppercase text-xs tracking-wider">Provide Input &rarr;</button>
+                    <button type="button" onclick="closePriorityModal()" class="bg-navy-800 hover:bg-navy-900 text-white font-bold uppercase text-xs tracking-wider py-2.5 px-6 rounded transition-colors">Close Policy</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Police Citation Award Modal -->
+    <div id="awardsModal" class="fixed inset-0 z-50 overflow-y-auto hidden" aria-labelledby="awards-modal-title" role="dialog" aria-modal="true">
+        <div class="flex items-center justify-center min-h-screen pt-4 px-4 pb-20 text-center sm:block sm:p-0">
+            <div class="fixed inset-0 bg-gray-500 bg-opacity-75 transition-opacity" aria-hidden="true" onclick="closeAwardsModal()"></div>
+            <span class="hidden sm:inline-block sm:align-middle sm:h-screen" aria-hidden="true">&#8203;</span>
+            <div class="inline-block align-bottom bg-white rounded-xl text-left overflow-hidden shadow-2xl transform transition-all sm:my-8 sm:align-middle sm:max-w-2xl sm:w-full border border-gray-100">
+                <div class="bg-navy-800 text-white px-6 py-8 relative">
+                    <button type="button" onclick="closeAwardsModal()" class="absolute top-4 right-4 text-gray-300 hover:text-white p-1">
+                        <i data-lucide="x" class="w-6 h-6"></i>
+                    </button>
+                    <h3 class="text-3xl font-black uppercase tracking-tight">Award & Citation</h3>
+                    <p class="text-xs text-campaignRed-500 font-extrabold uppercase tracking-widest mt-1">RCMP Police Community Relations Award</p>
+                </div>
+                <div class="bg-white px-6 py-8 space-y-4 text-sm text-gray-700 leading-relaxed">
+                    <p class="font-semibold text-navy-800">
+                        "Recognized for outstanding leadership in building collaborative partnerships, bridging cultural divides, and implementing local safety workshops across Richmond."
+                    </p>
+                    <p>
+                        Gary has consistently believed that policing cannot succeed in isolation. This prestigious honor recognizes over a decade of community engagement initiatives, leading localized block watch coordination, conducting safety clinics for seniors, and mentoring local youth.
+                    </p>
+                    <p>
+                        Rather than relying on reactive measures, Gary’s award-winning framework focuses on collaborative education, giving residents direct agency in keeping their neighborhoods safe, clean, and cooperative.
+                    </p>
+                </div>
+                <div class="bg-gray-50 px-6 py-4 flex justify-end">
+                    <button type="button" onclick="closeAwardsModal()" class="bg-navy-800 hover:bg-navy-900 text-white font-bold uppercase text-xs tracking-wider py-2.5 px-6 rounded transition-colors">Close Citation</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Unified Contact / Volunteer / Media Interactive Form Modal -->
+    <div id="contactFormModal" class="fixed inset-0 z-50 overflow-y-auto hidden" aria-labelledby="form-modal-title" role="dialog" aria-modal="true">
+        <div class="flex items-center justify-center min-h-screen pt-4 px-4 pb-20 text-center sm:block sm:p-0">
+            <div class="fixed inset-0 bg-gray-500 bg-opacity-75 transition-opacity" aria-hidden="true" onclick="closeContactFormModal()"></div>
+            <span class="hidden sm:inline-block sm:align-middle sm:h-screen" aria-hidden="true">&#8203;</span>
+            <div class="inline-block align-bottom bg-white rounded-xl text-left overflow-hidden shadow-2xl transform transition-all sm:my-8 sm:align-middle sm:max-w-md sm:w-full border border-gray-100">
+                <div class="bg-navy-800 text-white px-6 py-6 relative">
+                    <button type="button" onclick="closeContactFormModal()" class="absolute top-4 right-4 text-gray-300 hover:text-white p-1">
+                        <i data-lucide="x" class="w-6 h-6"></i>
+                    </button>
+                    <h3 class="text-2xl font-black uppercase tracking-tight text-white" id="form-modal-title">Campaign Form</h3>
+                    <p class="text-xs text-campaignRed-500 font-extrabold uppercase tracking-widest mt-1" id="form-modal-subtitle">Connect with Gary</p>
+                </div>
+                <form onsubmit="handleCampaignFormSubmit(event)" class="bg-white p-6 space-y-4">
+                    <input type="hidden" id="form-context" value="General Inquiry">
+                    <div>
+                        <label class="block text-[10px] font-bold uppercase text-gray-500 mb-1">Full Name</label>
+                        <input type="text" required class="w-full bg-gray-50 border border-gray-200 rounded px-3 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-navy-800">
+                    </div>
+                    <div>
+                        <label class="block text-[10px] font-bold uppercase text-gray-500 mb-1">Email Address</label>
+                        <input type="email" required class="w-full bg-gray-50 border border-gray-200 rounded px-3 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-navy-800">
+                    </div>
+                    <div>
+                        <label class="block text-[10px] font-bold uppercase text-gray-500 mb-1">Phone Number</label>
+                        <input type="tel" required class="w-full bg-gray-50 border border-gray-200 rounded px-3 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-navy-800">
+                    </div>
+                    <div id="dynamic-field">
+                        <!-- Contextually injected fields -->
+                    </div>
+                    <div>
+                        <label class="block text-[10px] font-bold uppercase text-gray-500 mb-1">Message / Notes</label>
+                        <textarea required rows="3" class="w-full bg-gray-50 border border-gray-200 rounded px-3 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-navy-800" placeholder="Tell us how we can coordinate..."></textarea>
+                    </div>
+                    <button type="submit" class="w-full bg-campaignRed-600 hover:bg-campaignRed-700 text-white font-bold uppercase text-xs tracking-wider py-3.5 rounded shadow transition-all">Submit Registration</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- All Questions FAQ List Modal -->
+    <div id="allFaqModal" class="fixed inset-0 z-50 overflow-y-auto hidden" aria-labelledby="all-faq-title" role="dialog" aria-modal="true">
+        <div class="flex items-center justify-center min-h-screen pt-4 px-4 pb-20 text-center sm:block sm:p-0">
+            <div class="fixed inset-0 bg-gray-500 bg-opacity-75 transition-opacity" aria-hidden="true" onclick="toggleAccordionListModal(false)"></div>
+            <span class="hidden sm:inline-block sm:align-middle sm:h-screen" aria-hidden="true">&#8203;</span>
+            <div class="inline-block align-bottom bg-white rounded-xl text-left overflow-hidden shadow-2xl transform transition-all sm:my-8 sm:align-middle sm:max-w-2xl sm:w-full border border-gray-100">
+                <div class="bg-navy-800 text-white px-6 py-8 relative">
+                    <button type="button" onclick="toggleAccordionListModal(false)" class="absolute top-4 right-4 text-gray-300 hover:text-white p-1">
+                        <i data-lucide="x" class="w-6 h-6"></i>
+                    </button>
+                    <h3 class="text-3xl font-black uppercase tracking-tight">Campaign Knowledge Hub</h3>
+                    <p class="text-xs text-campaignRed-500 font-extrabold uppercase tracking-widest mt-1">All Questions & Answers</p>
+                </div>
+                <div class="bg-white px-6 py-8 space-y-6 text-sm text-gray-700 leading-relaxed overflow-y-auto max-h-[50vh]">
+                    <div class="border-b border-gray-100 pb-4">
+                        <h4 class="font-bold text-navy-800 text-base mb-1">Who is Gary Law?</h4>
+                        <p class="text-xs text-gray-600">Gary Law is a former RCMP Senior Officer, a Richmond resident of over 30 years, and a dedicated community volunteer. He is the recipient of multiple RCMP Police Community Relations Awards and has led numerous local youth mentoring programs.</p>
+                    </div>
+                    <div class="border-b border-gray-100 pb-4">
+                        <h4 class="font-bold text-navy-800 text-base mb-1">Why is Gary Law running for Richmond City Council?</h4>
+                        <p class="text-xs text-gray-600">Gary is running to apply his professional security, community policing background, and deep community insights directly to our local leadership framework. He believes City Council needs clear public accountability and expert oversight on safety infrastructure.</p>
+                    </div>
+                    <div class="border-b border-gray-100 pb-4">
+                        <h4 class="font-bold text-navy-800 text-base mb-1">What are Gary Law's priorities?</h4>
+                        <p class="text-xs text-gray-600">His core priorities are: Community Safety, Traffic & Transportation, Transparency & Accountability, Seniors & Families, and maintaining a Livable Richmond.</p>
+                    </div>
+                    <div class="border-b border-gray-100 pb-4">
+                        <h4 class="font-bold text-navy-800 text-base mb-1">What is Gary Law's approach to community safety?</h4>
+                        <p class="text-xs text-gray-600">Gary leverages his experience as a former RCMP officer to support proactive safety measures. This includes expanding neighborhood block watch initiatives, increasing police patrol visibility in key spaces, and coordinating mental health professionals alongside emergency services.</p>
+                    </div>
+                    <div>
+                        <h4 class="font-bold text-navy-800 text-base mb-1">How can I support the campaign?</h4>
+                        <p class="text-xs text-gray-600">You can help by joining as a volunteer, hosting a lawn sign, spreading the word, or sharing your ideas with Gary. Click "Volunteer" on our connect panel to get registered.</p>
+                    </div>
+                </div>
+                <div class="bg-gray-50 px-6 py-4 flex justify-end">
+                    <button type="button" onclick="toggleAccordionListModal(false)" class="bg-navy-800 hover:bg-navy-900 text-white font-bold uppercase text-xs tracking-wider py-2.5 px-6 rounded transition-colors">Close Portal</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Campaign News Updates Modal -->
+    <div id="newsModal" class="fixed inset-0 z-50 overflow-y-auto hidden" aria-labelledby="news-modal-title" role="dialog" aria-modal="true">
+        <div class="flex items-center justify-center min-h-screen pt-4 px-4 pb-20 text-center sm:block sm:p-0">
+            <div class="fixed inset-0 bg-gray-500 bg-opacity-75 transition-opacity" aria-hidden="true" onclick="closeNewsModal()"></div>
+            <span class="hidden sm:inline-block sm:align-middle sm:h-screen" aria-hidden="true">&#8203;</span>
+            <div class="inline-block align-bottom bg-white rounded-xl text-left overflow-hidden shadow-2xl transform transition-all sm:my-8 sm:align-middle sm:max-w-2xl sm:w-full border border-gray-100">
+                <div class="bg-navy-800 text-white px-6 py-8 relative">
+                    <button type="button" onclick="closeNewsModal()" class="absolute top-4 right-4 text-gray-300 hover:text-white p-1">
+                        <i data-lucide="x" class="w-6 h-6"></i>
+                    </button>
+                    <h3 class="text-3xl font-black uppercase tracking-tight">Campaign News</h3>
+                    <p class="text-xs text-campaignRed-500 font-extrabold uppercase tracking-widest mt-1">Official Press & Updates</p>
+                </div>
+                <div class="bg-white px-6 py-8 space-y-6 text-sm text-gray-700 leading-relaxed overflow-y-auto max-h-[50vh]">
+                    <div class="border-b border-gray-100 pb-4 space-y-1">
+                        <span class="text-[10px] font-bold text-campaignRed-600 uppercase">June 12, 2026</span>
+                        <h4 class="font-bold text-navy-800 text-base">Gary Law Outlines Safety and Speed Mitigation Near Richmond Schools</h4>
+                        <p class="text-xs text-gray-600">Proposing localized safety-audit networks to support safe pedestrian travel lanes across Steveston and central Richmond academic grids.</p>
+                    </div>
+                    <div class="border-b border-gray-100 pb-4 space-y-1">
+                        <span class="text-[10px] font-bold text-campaignRed-600 uppercase">May 28, 2026</span>
+                        <h4 class="font-bold text-navy-800 text-base">Gary Law Proposes Open Audit Plan for Municipal Spend Oversight</h4>
+                        <p class="text-xs text-gray-600">Addressing capital program bottlenecks and promising transparent open-book municipal balance charts available online monthly.</p>
+                    </div>
+                    <div class="space-y-1">
+                        <span class="text-[10px] font-bold text-campaignRed-600 uppercase">April 15, 2026</span>
+                        <h4 class="font-bold text-navy-800 text-base">Official Campaign Launch Received Warmly by Local Residents</h4>
+                        <p class="text-xs text-gray-600">Former RCMP Officer Gary Law formally registers, committing to safety, transparency, and family support systems.</p>
+                    </div>
+                </div>
+                <div class="bg-gray-50 px-6 py-4 flex justify-end">
+                    <button type="button" onclick="closeNewsModal()" class="bg-navy-800 hover:bg-navy-900 text-white font-bold uppercase text-xs tracking-wider py-2.5 px-6 rounded transition-colors">Close News</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script>
+        // Interactive state variables
+        const priorityContent = {
+            'safety': {
+                title: "Community Safety",
+                subtitle: "Pillar One — Safe Neighborhoods, Schools, & Public Spaces",
+                body: `
+                    <p class="font-semibold text-navy-800 text-base">Public safety is the foundation of a healthy, prosperous community.</p>
+                    <p>Drawing directly from Gary Law’s career as an RCMP Senior Officer, his community safety plan focuses on highly visible, preventative, and collaborative measures:</p>
+                    <ul class="space-y-3 my-4 pl-4 list-disc text-xs">
+                        <li><strong>Empowering Block Watches:</strong> Launching simple funding and resources to help local neighborhoods launch, organize, and maintain active watch programs.</li>
+                        <li><strong>Integrated Mental Health Crisis Response:</strong> Coordinating with mental health professionals to co-respond alongside safety officers, optimizing emergency resource allocation.</li>
+                        <li><strong>Visible Patrol Operations:</strong> Bolstering foot-and-bike neighborhood patrols near Richmond schools, retail centers, and transit terminals.</li>
+                    </ul>
+                `
+            },
+            'traffic': {
+                title: "Traffic & Transportation",
+                subtitle: "Pillar Two — Safe Pedestrians & Effective Corridor Flow",
+                body: `
+                    <p class="font-semibold text-navy-800 text-base">Civic growth requires efficient, safe transportation networks.</p>
+                    <p>Gary is committed to mitigating Richmond’s corridor bottlenecks and protecting our pedestrians:</p>
+                    <ul class="space-y-3 my-4 pl-4 list-disc text-xs">
+                        <li><strong>Targeting Commute Bottlenecks:</strong> Collaborating with structural engineers to review smart-traffic sensor routing at heavy transit points.</li>
+                        <li><strong>School-Zone Security Upgrades:</strong> Implementing highly visible warning lights, crosswalk indicators, and school-zone speed enforcement.</li>
+                        <li><strong>Mass Transit Advocacy:</strong> Working with regional organizations like TransLink to ensure bus routes dynamically adapt to high-density areas.</li>
+                    </ul>
+                `
+            },
+            'transparency': {
+                title: "Transparency & Accountability",
+                subtitle: "Pillar Three — Clean Spending & Clear Public Communication",
+                body: `
+                    <p class="font-semibold text-navy-800 text-base">Every tax dollar must serve a clear, vital municipal benefit.</p>
+                    <p>Gary will introduce strict accountability standards to eliminate wasteful municipal expenditures:</p>
+                    <ul class="space-y-3 my-4 pl-4 list-disc text-xs">
+                        <li><strong>Interactive Spending Portals:</strong> Building an easily understood open-data dashboard mapping municipal revenues and major capital budgets.</li>
+                        <li><strong>Robust Program Auditing:</strong> Demanding external program audits for large infrastructure initiatives to prevent unnecessary budget overruns.</li>
+                        <li><strong>Neighbor-Specific Forums:</strong> Conducting localized public review clinics before major urban development approvals.</li>
+                    </ul>
+                `
+            },
+            'seniors': {
+                title: "Seniors & Families Support",
+                subtitle: "Pillar Four — Accessible Services & Active Communities",
+                body: `
+                    <p class="font-semibold text-navy-800 text-base">Richmond’s strength lives in its vibrant, multi-generational communities.</p>
+                    <p>Gary is dedicated to securing our vital social, active, and multi-lingual programs:</p>
+                    <ul class="space-y-3 my-4 pl-4 list-disc text-xs">
+                        <li><strong>Protecting Recreation Facilities:</strong> Ensuring continuous funding for multi-lingual physical education and wellness seminars.</li>
+                        <li><strong>Localized Mobility Infrastructure:</strong> Upgrading ramps, expanding resting areas near popular parks, and supporting accessible local transit links.</li>
+                        <li><strong>Youth Mentorship and Active Parks:</strong> Encouraging healthy outdoor spaces and youth development systems to support young families.</li>
+                    </ul>
+                `
+            },
+            'livable': {
+                title: "Livable Richmond",
+                subtitle: "Pillar Five — Preserving Greenspace & Smart Planning",
+                body: `
+                    <p class="font-semibold text-navy-800 text-base">Preserving Richmond's unique ecosystem and parks is essential for community wellness.</p>
+                    <p>Gary believes municipal development must remain balanced and community-first:</p>
+                    <ul class="space-y-3 my-4 pl-4 list-disc text-xs">
+                        <li><strong>Preserving Green Reserves:</strong> Protecting agricultural reserves, municipal parks, and expanding community tree canopies.</li>
+                        <li><strong>Balanced Urban Development:</strong> Integrating green parks and child care centers directly alongside new residential planning.</li>
+                        <li><strong>Active Clean-Street Measures:</strong> Increasing investments in municipal maintenance teams to keep our streets and parks clean.</li>
+                    </ul>
+                `
+            }
+        };
+
+        // Modal triggers
+        function toggleBiographyModal(visible) {
+            const bioModal = document.getElementById('bioModal');
+            if (visible) {
+                bioModal.classList.remove('hidden');
+            } else {
+                bioModal.classList.add('hidden');
+            }
+        }
+
+        // Keep priority modal functional
+        function openPriorityModal(priorityKey) {
+            const priority = priorityContent[priorityKey];
+            if (priority) {
+                document.getElementById('priority-modal-title').innerText = priority.title;
+                document.getElementById('priority-modal-subtitle').innerText = priority.subtitle;
+                document.getElementById('priority-modal-body').innerHTML = priority.body;
+                document.getElementById('priorityModal').classList.remove('hidden');
+            }
+        }
+
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                const targetId = this.getAttribute('href');
+                if (targetId.startsWith('#')) {
+                    e.preventDefault();
+                    const targetElement = document.querySelector(targetId);
+                    if (targetElement) {
+                        targetElement.scrollIntoView({
+                            behavior: 'smooth'
+                        });
+                    }
+                }
+            });
+        });
+
+        function closePriorityModal() {
+            document.getElementById('priorityModal').classList.add('hidden');
+        }
+
+        // Action Modals
+        function openAwardsModal() {
+            document.getElementById('awardsModal').classList.remove('hidden');
+        }
+
+        // Close functions
+        function closeAwardsModal() {
+            document.getElementById('awardsModal').classList.add('hidden');
+        }
+
+        function toggleAccordionListModal(visible) {
+            const faqModal = document.getElementById('allFaqModal');
+            if (visible) {
+                faqModal.classList.remove('hidden');
+            } else {
+                faqModal.classList.add('hidden');
+            }
+        }
+
+        function openNewsModal() {
+            document.getElementById('newsModal').classList.remove('hidden');
+        }
+
+        function closeNewsModal() {
+            document.getElementById('newsModal').classList.add('hidden');
+        }
+
+        // Context-driven form builder
+        function openContactFormModal(contextTitle) {
+            const titleField = document.getElementById('form-modal-title');
+            const subtitleField = document.getElementById('form-modal-subtitle');
+            const contextInput = document.getElementById('form-context');
+            const dynamicField = document.getElementById('dynamic-field');
+            
+            contextInput.value = contextTitle;
+            titleField.innerText = contextTitle;
+            
+            if (contextTitle.includes('Volunteer')) {
+                subtitleField.innerText = "Join Gary's Core Outreach Team";
+                dynamicField.innerHTML = `
+                    <label class="block text-[10px] font-bold uppercase text-gray-500 mb-1">How can you help?</label>
+                    <select required class="w-full bg-gray-50 border border-gray-200 rounded px-3 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-navy-800 text-gray-800">
+                        <option>Host a Lawn Sign</option>
+                        <option>Door-to-Door Walks</option>
+                        <option>Outreach Calls</option>
+                        <option>Community Events</option>
+                    </select>
+                `;
+            } else if (contextTitle.includes('Media')) {
+                subtitleField.innerText = "Request Statement or Press Package";
+                dynamicField.innerHTML = `
+                    <label class="block text-[10px] font-bold uppercase text-gray-500 mb-1">Media Publication Name</label>
+                    <input type="text" required class="w-full bg-gray-50 border border-gray-200 rounded px-3 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-navy-800 text-gray-800" placeholder="e.g. Richmond Sentinel">
+                `;
+            } else {
+                subtitleField.innerText = "Send a Direct Message to the Campaign";
+                dynamicField.innerHTML = `
+                    <label class="block text-[10px] font-bold uppercase text-gray-500 mb-1">Subject Area</label>
+                    <select required class="w-full bg-gray-50 border border-gray-200 rounded px-3 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-navy-800 text-gray-800">
+                        <option>General Support</option>
+                        <option>Neighborhood Safety Issue</option>
+                        <option>Transit Suggestion</option>
+                        <option>Other Topic</option>
+                    </select>
+                `;
+            }
+            
+            document.getElementById('contactFormModal').classList.remove('hidden');
+        }
+
+        function closeContactFormModal() {
+            document.getElementById('contactFormModal').classList.add('hidden');
+        }
+
+        // Form submission with Custom Toast
+        function handleCampaignFormSubmit(event) {
+            event.preventDefault();
+            const form = event.target;
+            const context = document.getElementById('form-context').value;
+            
+            closeContactFormModal();
+            closePriorityModal();
+            
+            const toast = document.getElementById('toast');
+            document.getElementById('toastMessage').innerText = `Your ${context} request has been successfully processed. Thank you for connecting with the campaign.`;
+            
+            toast.classList.remove('translate-y-20', 'opacity-0', 'pointer-events-none');
+            toast.classList.add('translate-y-0', 'opacity-100');
+            
+            form.reset();
+
+            setTimeout(() => {
+                toast.classList.add('translate-y-20', 'opacity-0', 'pointer-events-none');
+                toast.classList.remove('translate-y-0', 'opacity-100');
+            }, 5000);
+        }
+
+        // Accordion utility
+        function toggleAccordion(id) {
+            const accordion = document.getElementById(id);
+            const isHidden = accordion.classList.contains('hidden');
+            const iconContainer = document.getElementById(`${id}-icon`);
+            
+            for (let i = 1; i <= 4; i++) {
+                const acc = document.getElementById(`faq-${i}`);
+                const icon = document.getElementById(`faq-${i}-icon`);
+                if (acc && acc.id !== id) {
+                    acc.classList.add('hidden');
+                    if (icon) {
+                        icon.innerHTML = '<i data-lucide="plus" class="w-4 h-4 text-navy-800"></i>';
+                    }
+                }
+            }
+
+            if (isHidden) {
+                accordion.classList.remove('hidden');
+                iconContainer.innerHTML = '<i data-lucide="minus" class="w-4 h-4 text-campaignRed-600"></i>';
+            } else {
+                accordion.classList.add('hidden');
+                iconContainer.innerHTML = '<i data-lucide="plus" class="w-4 h-4 text-navy-800"></i>';
+            }
+            
+            lucide.createIcons();
+        }
+
+        // Mobile menu utility
+        function toggleMobileMenu() {
+            const menu = document.getElementById('mobileMenu');
+            const menuIcon = document.getElementById('menuIcon');
+            const isHidden = menu.classList.contains('hidden');
+            
+            if (isHidden) {
+                menu.classList.remove('hidden');
+                menuIcon.innerHTML = '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M6 18L18 6M6 6l12 12" />';
+            } else {
+                menu.classList.add('hidden');
+                menuIcon.innerHTML = '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M4 6h16M4 12h16M4 18h16" />';
+            }
+        }
+
+        window.addEventListener('load', () => {
+            lucide.createIcons();
+        });
+    </script>
+</body>
+</html>
