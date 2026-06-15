@@ -171,64 +171,78 @@
     <!-- MAIN APP CONTENT PANELS -->
     <main class="flex-grow">
 
-<section id="hero"
-class="relative min-h-screen overflow-hidden">
+<!-- HERO -->
+<section id="hero" class="relative h-screen min-h-[700px] overflow-hidden">
 
-  <!-- Hero Image -->
-  <div class="absolute inset-0">
-    <img
-      src="https://gary-law-richmond-demo.pages.dev/images/gary-hero.jpg"
-      alt="Gary Law"
-      class="w-full h-full object-cover object-center"
-    >
-
-    <!-- Overlay -->
-    <div class="absolute inset-0 bg-white/45"></div>
-  </div>
+  <!-- Background Image -->
+  <img
+    src="https://gary-law-richmond-demo.pages.dev/images/gary-hero.jpg"
+    alt="Gary Law for Richmond City Council"
+    class="absolute inset-0 w-full h-full object-cover"
+  >
 
   <!-- Content -->
-  <div class="relative z-10 max-w-7xl mx-auto px-6">
+  <div class="relative z-10 h-full">
 
-    <div class="min-h-screen flex items-center">
+    <div class="max-w-7xl mx-auto h-full px-6 lg:px-8">
 
-      <div class="max-w-2xl">
+      <div class="h-full flex items-center">
 
-        <span
-        class="inline-block bg-white/80 backdrop-blur px-4 py-2 text-sm font-bold tracking-widest text-red-600 uppercase">
-          Richmond City Council Candidate
-        </span>
+        <div class="max-w-2xl">
 
-        <h1 class="mt-6 text-6xl md:text-8xl font-black leading-none text-[#062B5B] uppercase">
-          Gary Law
-        </h1>
+          <!-- Label -->
+          <div
+            class="inline-block bg-white px-5 py-3 shadow-sm">
+            <span
+              class="text-xs md:text-sm font-bold tracking-[0.2em] uppercase text-red-600">
+              Richmond City Council Candidate
+            </span>
+          </div>
 
-        <div class="mt-8 border-l-4 border-red-600 pl-6">
-          <h2 class="text-3xl md:text-5xl font-black leading-tight text-[#062B5B] uppercase">
-            LAW FOR SAFETY.<br>
-            LAW FOR RICHMOND.
-          </h2>
-        </div>
+          <!-- Name -->
+          <h1
+            class="mt-8 text-[4rem] md:text-[7rem] leading-none font-black tracking-tight text-[#062B5B] uppercase">
+            Gary Law
+          </h1>
 
-        <p class="mt-8 text-xl text-gray-800 font-medium">
-          Former RCMP Senior Officer.<br>
-          Community Policing Award Recipient.
-        </p>
+          <!-- Slogan -->
+          <div class="mt-8 border-l-4 border-red-600 pl-6">
 
-        <div class="mt-10 flex flex-wrap gap-4">
+            <h2
+              class="text-[2rem] md:text-[4rem] leading-[1.05] font-black uppercase text-[#062B5B]">
+              LAW FOR SAFETY.<br>
+              LAW FOR RICHMOND.
+            </h2>
 
-          <a href="#priorities"
-          class="bg-[#062B5B] hover:bg-[#041d3d]
-          text-white px-8 py-4 font-bold uppercase tracking-wider">
-            View Priorities
-          </a>
+          </div>
 
-          <a href="#connect"
-          class="border-2 border-[#062B5B]
-          text-[#062B5B]
-          hover:bg-white
-          px-8 py-4 font-bold uppercase tracking-wider">
-            Contact
-          </a>
+          <!-- Description -->
+          <p
+            class="mt-8 text-lg md:text-2xl text-gray-900 leading-relaxed font-medium">
+            Former RCMP Senior Officer.<br>
+            Community Policing Award Recipient.
+          </p>
+
+          <!-- CTA -->
+          <div class="mt-10 flex flex-wrap gap-4">
+
+            <a
+              href="#priorities"
+              class="inline-flex items-center justify-center bg-[#062B5B] hover:bg-[#041d3d] text-white px-8 py-4 font-bold uppercase tracking-wider transition">
+
+              View Priorities
+
+            </a>
+
+            <a
+              href="#connect"
+              class="inline-flex items-center justify-center border-2 border-[#062B5B] text-[#062B5B] bg-white/70 backdrop-blur-sm hover:bg-white px-8 py-4 font-bold uppercase tracking-wider transition">
+
+              Contact
+
+            </a>
+
+          </div>
 
         </div>
 
@@ -239,6 +253,67 @@ class="relative min-h-screen overflow-hidden">
   </div>
 
 </section>
+
+<style>
+
+/* Desktop */
+#hero img{
+  object-position: 75% center;
+}
+
+/* Tablet */
+@media (max-width:1200px){
+
+  #hero img{
+    object-position: 78% center;
+  }
+
+}
+
+/* Mobile */
+@media (max-width:768px){
+
+  #hero{
+    min-height:100vh;
+    height:100vh;
+  }
+
+  #hero img{
+    object-position: 72% center;
+  }
+
+  #hero h1{
+    font-size:3.5rem;
+  }
+
+  #hero h2{
+    font-size:2rem;
+  }
+
+  #hero p{
+    font-size:1.1rem;
+  }
+
+}
+
+/* Small phones */
+@media (max-width:480px){
+
+  #hero img{
+    object-position: 68% center;
+  }
+
+  #hero h1{
+    font-size:3rem;
+  }
+
+  #hero h2{
+    font-size:1.75rem;
+  }
+
+}
+
+</style>
 
         <!-- SECTION 1.2: GARY CREDENTIALS / TRUST INDICATORS -->
         <section class="bg-gray-50 py-8 border-b border-gray-100">
