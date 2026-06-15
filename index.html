@@ -172,149 +172,139 @@
     <main class="flex-grow">
 
 <!-- HERO -->
-<section id="hero" class="relative h-screen min-h-[700px] overflow-hidden">
+<section id="hero" class="relative min-h-[760px] overflow-hidden bg-white">
 
   <!-- Background Image -->
   <img
     src="https://gary-law-richmond-demo.pages.dev/images/gary-hero.jpg"
     alt="Gary Law for Richmond City Council"
-    class="absolute inset-0 w-full h-full object-cover"
+    class="absolute inset-0 w-full h-full object-cover hero-img"
   >
 
   <!-- Content -->
   <div class="relative z-10 h-full">
+    <div class="max-w-7xl mx-auto min-h-[760px] px-6 lg:px-8 flex items-center">
 
-    <div class="max-w-7xl mx-auto h-full px-6 lg:px-8">
+      <div class="hero-content max-w-[640px]">
 
-      <div class="h-full flex items-center">
+        <div class="inline-block bg-white px-5 py-3 shadow-sm">
+          <span class="text-xs md:text-sm font-bold tracking-[0.22em] uppercase text-red-600">
+            Richmond City Council Candidate
+          </span>
+        </div>
 
-        <div class="max-w-2xl">
+        <h1 class="hero-name mt-7 font-black leading-none tracking-tight text-[#062B5B] uppercase">
+          Gary Law
+        </h1>
 
-          <!-- Label -->
-          <div
-            class="inline-block bg-white px-5 py-3 shadow-sm">
-            <span
-              class="text-xs md:text-sm font-bold tracking-[0.2em] uppercase text-red-600">
-              Richmond City Council Candidate
-            </span>
-          </div>
+        <div class="mt-7 border-l-4 border-red-600 pl-6">
+          <h2 class="hero-slogan font-black leading-[1.05] uppercase text-[#062B5B]">
+            LAW FOR SAFETY.<br>
+            LAW FOR RICHMOND.
+          </h2>
+        </div>
 
-          <!-- Name -->
-          <h1
-            class="mt-8 text-[4rem] md:text-[7rem] leading-none font-black tracking-tight text-[#062B5B] uppercase">
-            Gary Law
-          </h1>
+        <p class="mt-7 text-lg md:text-xl text-gray-950 leading-relaxed font-medium">
+          Former RCMP Senior Officer.<br>
+          Community Policing Award Recipient.
+        </p>
 
-          <!-- Slogan -->
-          <div class="mt-8 border-l-4 border-red-600 pl-6">
+        <div class="mt-9 flex flex-wrap gap-4">
+          <a
+            href="#priorities"
+            class="inline-flex items-center justify-center bg-[#062B5B] hover:bg-[#041d3d] text-white px-8 py-4 font-bold uppercase tracking-wider transition">
+            View Priorities
+          </a>
 
-            <h2
-              class="text-[2rem] md:text-[4rem] leading-[1.05] font-black uppercase text-[#062B5B]">
-              LAW FOR SAFETY.<br>
-              LAW FOR RICHMOND.
-            </h2>
-
-          </div>
-
-          <!-- Description -->
-          <p
-            class="mt-8 text-lg md:text-2xl text-gray-900 leading-relaxed font-medium">
-            Former RCMP Senior Officer.<br>
-            Community Policing Award Recipient.
-          </p>
-
-          <!-- CTA -->
-          <div class="mt-10 flex flex-wrap gap-4">
-
-            <a
-              href="#priorities"
-              class="inline-flex items-center justify-center bg-[#062B5B] hover:bg-[#041d3d] text-white px-8 py-4 font-bold uppercase tracking-wider transition">
-
-              View Priorities
-
-            </a>
-
-            <a
-              href="#connect"
-              class="inline-flex items-center justify-center border-2 border-[#062B5B] text-[#062B5B] bg-white/70 backdrop-blur-sm hover:bg-white px-8 py-4 font-bold uppercase tracking-wider transition">
-
-              Contact
-
-            </a>
-
-          </div>
-
+          <a
+            href="#connect"
+            class="inline-flex items-center justify-center border-2 border-[#062B5B] text-[#062B5B] bg-white/75 hover:bg-white px-8 py-4 font-bold uppercase tracking-wider transition">
+            Contact
+          </a>
         </div>
 
       </div>
 
     </div>
-
   </div>
 
 </section>
 
 <style>
-
-/* Desktop */
-#hero img{
-  object-position: 75% center;
-}
-
-/* Tablet */
-@media (max-width:1200px){
-
-  #hero img{
-    object-position: 78% center;
+  #hero .hero-img{
+    object-position: 74% center;
   }
 
-}
-
-/* Mobile */
-@media (max-width:768px){
-
-  #hero{
-    min-height:100vh;
-    height:100vh;
+  #hero .hero-name{
+    font-size: clamp(56px, 5.2vw, 92px);
   }
 
-  #hero img{
-    object-position: 72% center;
+  #hero .hero-slogan{
+    font-size: clamp(38px, 3.4vw, 58px);
   }
 
-  #hero h1{
-    font-size:3.5rem;
+  @media (max-width: 1024px){
+    #hero,
+    #hero > div > div{
+      min-height: 720px;
+    }
+
+    #hero .hero-img{
+      object-position: 72% center;
+    }
+
+    #hero .hero-content{
+      max-width: 560px;
+    }
   }
 
-  #hero h2{
-    font-size:2rem;
+  @media (max-width: 768px){
+    #hero,
+    #hero > div > div{
+      min-height: 100vh;
+    }
+
+    #hero .hero-img{
+      object-position: 68% center;
+    }
+
+    #hero .hero-content{
+      max-width: 100%;
+      padding-top: 40px;
+    }
+
+    #hero .hero-name{
+      font-size: 52px;
+    }
+
+    #hero .hero-slogan{
+      font-size: 32px;
+    }
+
+    #hero p{
+      font-size: 17px;
+    }
   }
 
-  #hero p{
-    font-size:1.1rem;
+  @media (max-width: 480px){
+    #hero .hero-img{
+      object-position: 63% center;
+    }
+
+    #hero .hero-name{
+      font-size: 46px;
+    }
+
+    #hero .hero-slogan{
+      font-size: 28px;
+    }
+
+    #hero a{
+      width: 100%;
+    }
   }
-
-}
-
-/* Small phones */
-@media (max-width:480px){
-
-  #hero img{
-    object-position: 68% center;
-  }
-
-  #hero h1{
-    font-size:3rem;
-  }
-
-  #hero h2{
-    font-size:1.75rem;
-  }
-
-}
-
 </style>
-
+        
         <!-- SECTION 1.2: GARY CREDENTIALS / TRUST INDICATORS -->
         <section class="bg-gray-50 py-8 border-b border-gray-100">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
