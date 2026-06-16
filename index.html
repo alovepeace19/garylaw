@@ -392,8 +392,6 @@
       LAW FOR RICHMOND.
     </div>
 
-    <div class="gmh-gap"></div>
-
     <p>
       Former RCMP Senior Officer.<br>
       Community Policing Award Recipient.
@@ -412,123 +410,99 @@
 </section>
 
 <style>
-/* hide mobile hero on desktop */
 #gary-mobile-hero{
   display:none;
 }
 
 @media (max-width:768px){
 
-  /* hide old hero on mobile */
   .gary-hero{
     display:none !important;
   }
 
   #gary-mobile-hero{
     display:block;
-    position:relative;
-    height:560px;
-    overflow:hidden;
     background:#fff;
   }
 
   #gary-mobile-hero .gmh-photo{
-    position:absolute;
-    inset:0;
-    z-index:0;
+    width:100%;
+    height:390px;
+    overflow:hidden;
+    background:#eef1f5;
   }
 
   #gary-mobile-hero .gmh-photo img{
     width:100%;
     height:100%;
     object-fit:cover;
-    object-position:78% top;
-    filter:brightness(1.05) contrast(1.05) saturate(.85) hue-rotate(-4deg);
-  }
-
-  #gary-mobile-hero::after{
-    content:"";
-    position:absolute;
-    inset:0;
-    z-index:1;
-    background:linear-gradient(
-      to bottom,
-      rgba(255,255,255,0) 0%,
-      rgba(255,255,255,0) 52%,
-      rgba(255,255,255,.18) 68%,
-      rgba(255,255,255,.75) 82%,
-      #fff 100%
-    );
-    pointer-events:none;
+    object-position:92% top;
+    filter:brightness(1.04) contrast(1.04) saturate(.9);
+    transform:scale(1.06);
+    transform-origin:center top;
   }
 
   #gary-mobile-hero .gmh-content{
-    position:absolute;
-    left:24px;
-    right:24px;
-    bottom:28px;
-    z-index:2;
+    padding:24px 34px 34px;
   }
 
   #gary-mobile-hero h1{
+    margin:0 0 18px;
     color:#062B5B;
     font-size:40px;
-    font-weight:900;
     line-height:.92;
-    margin:0 0 18px;
-    letter-spacing:-.04em;
+    font-weight:900;
+    letter-spacing:-.045em;
     text-transform:uppercase;
-    margin:0 0 16px;
   }
 
   #gary-mobile-hero .gmh-slogan{
-    color:#062B5B;
+    margin:0 0 18px;
     border-left:5px solid #D72638;
-    padding-left:14px;
-    font-size:20px;
+    padding-left:16px;
+    color:#062B5B;
+    font-size:23px;
     line-height:1.08;
     font-weight:900;
-    letter-spacing:-.03em;
+    letter-spacing:-.035em;
     text-transform:uppercase;
-  }
-
-  #gary-mobile-hero .gmh-gap{
-    height:180px;
   }
 
   #gary-mobile-hero p{
+    margin:0 0 28px;
     color:#111827;
-    font-size:14px;
-    line-height:1.5;
+    font-size:15px;
+    line-height:1.45;
     font-weight:500;
-    margin:0 0 22px;
   }
 
   #gary-mobile-hero .gmh-affiliation{
+    margin:0 0 28px;
     color:#D72638;
-    font-size:11px;
+    font-size:12px;
+    line-height:1.2;
     font-weight:800;
     letter-spacing:.12em;
     text-transform:uppercase;
-    margin:0 0 24px;
   }
 
   #gary-mobile-hero .gmh-cta{
     display:grid;
     grid-template-columns:1fr 1fr;
-    gap:12px;
+    gap:18px;
   }
 
   #gary-mobile-hero .gmh-cta a{
-    min-height:52px;
+    height:56px;
     display:flex;
     align-items:center;
     justify-content:center;
     text-decoration:none;
     text-transform:uppercase;
+    letter-spacing:.08em;
     font-size:12px;
     font-weight:900;
-    letter-spacing:.08em;
+    border-radius:4px;
   }
 
   #gary-mobile-hero .gmh-cta a:first-child{
