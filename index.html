@@ -965,7 +965,7 @@
     </div>
       <div class="gt-cta">
   <a href="/about-gary/" class="gt-cta-link">
-    About Gary
+    About Gary →
   </a>
 </div>
   </div>
@@ -1323,15 +1323,6 @@
 .gt-cta-link:hover{
   background:#d72638;
 }
-
-@media (max-width:768px){
-
-.gt-cta{
-  margin-top:36px;
-  text-align:left;
-}
-}
-    
 </style>
 
 <script>
@@ -1425,262 +1416,28 @@
 })();
 </script>
         
-<!-- FAQ PREVIEW -->
-<section id="faq" class="gary-faq">
-  <div class="gf-wrap">
+        <!-- SECTION 4: POLICE COMMUNITY RELATIONS AWARD -->
+        <section id="awards" class="bg-navy-800 text-white py-16 md:py-24">
+            <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="grid grid-cols-1 md:grid-cols-12 gap-8 items-center">
+                    
+                    <div class="md:col-span-8 space-y-4">
+                        <span class="text-xs font-bold text-campaignRed-500 uppercase tracking-widest">Prestigious Recognition</span>
+                        <h2 class="text-3xl md:text-4xl font-extrabold tracking-tight">Police Community Relations Award</h2>
+                        <p class="text-gray-300 text-sm leading-relaxed max-w-3xl">
+                            Awarded for outstanding achievements in fostering dialogue across cultural lines, establishing youth mentorship programs, and creating proactive community platforms. Gary Law’s core policing principle is that safety thrives through trust, collaboration, and mutual understanding.
+                        </p>
+                    </div>
 
-    <div class="gf-head">
-      <span>FAQ</span>
-      <h2>Questions You May Have</h2>
-    </div>
+                    <div class="md:col-span-4 flex justify-center md:justify-end">
+                        <button type="button" onclick="openAwardsModal()" class="inline-flex items-center justify-center bg-white hover:bg-gray-100 text-navy-800 font-bold uppercase tracking-wider text-xs py-4 px-8 rounded shadow transition-all transform hover:-translate-y-0.5">
+                            View Citation details
+                        </button>
+                    </div>
 
-    <div class="gf-list">
-
-      <details class="gf-item" open>
-        <summary>Why is Gary Law running for Richmond City Council?</summary>
-        <p>
-          Gary is running to continue a lifetime of public service and help build a safer,
-          more accountable, and more livable Richmond.
-        </p>
-      </details>
-
-      <details class="gf-item">
-        <summary>What experience does Gary Law bring?</summary>
-        <p>
-          Gary brings decades of public service experience as a former RCMP Senior Officer,
-          along with deep community roots in Richmond.
-        </p>
-      </details>
-
-      <details class="gf-item">
-        <summary>What are Gary Law's top priorities?</summary>
-        <p>
-          Gary's priorities include community safety, traffic and transportation,
-          transparency, seniors and families, and a more livable Richmond.
-        </p>
-      </details>
-
-      <details class="gf-item">
-        <summary>What makes Gary Law different?</summary>
-        <p>
-          Gary is not a career politician. He brings real public safety experience,
-          community service, and practical leadership.
-        </p>
-      </details>
-
-    </div>
-
-    <div class="gf-cta">
-      <h3>Still Have Questions?</h3>
-
-      <a href="/faq/" class="gf-cta-btn">
-        View All FAQs
-      </a>
-
-      <p>
-        Find answers to common questions about Gary Law,
-        his priorities, and the campaign.
-      </p>
-    </div>
-
-  </div>
-</section>
-
-<style>
-.gary-faq,
-.gary-faq *{
-  box-sizing:border-box;
-}
-
-.gary-faq{
-  width:100%;
-  padding:96px 24px;
-  background:#fff;
-  font-family:Arial, Helvetica, sans-serif;
-  color:#082f63;
-}
-
-.gf-wrap{
-  max-width:980px;
-  margin:0 auto;
-}
-
-.gf-head{
-  text-align:center;
-  margin-bottom:46px;
-}
-
-.gf-head span{
-  display:inline-block;
-  margin-bottom:14px;
-  color:#d72638;
-  font-size:13px;
-  font-weight:900;
-  letter-spacing:.18em;
-  text-transform:uppercase;
-}
-
-.gf-head h2{
-  margin:0;
-  color:#062b5b;
-  font-size:clamp(38px,4vw,58px);
-  line-height:1;
-  font-weight:900;
-  letter-spacing:-.04em;
-  text-transform:uppercase;
-}
-
-.gf-list{
-  display:grid;
-  gap:16px;
-}
-
-.gf-item{
-  border:1px solid #e5eaf1;
-  border-radius:16px;
-  background:#fff;
-  box-shadow:0 10px 28px rgba(8,47,99,.06);
-  overflow:hidden;
-}
-
-.gf-item summary{
-  list-style:none;
-  cursor:pointer;
-  padding:24px 64px 24px 24px;
-  position:relative;
-  color:#062b5b;
-  font-size:20px;
-  line-height:1.3;
-  font-weight:900;
-}
-
-.gf-item summary::-webkit-details-marker{
-  display:none;
-}
-
-.gf-item summary:after{
-  content:"+";
-  position:absolute;
-  right:24px;
-  top:50%;
-  transform:translateY(-50%);
-  color:#d72638;
-  font-size:30px;
-  line-height:1;
-  font-weight:700;
-}
-
-.gf-item[open] summary:after{
-  content:"–";
-}
-
-.gf-item p{
-  margin:0;
-  padding:0 24px 24px;
-  color:#4b5563;
-  font-size:16px;
-  line-height:1.65;
-}
-
-.gf-cta{
-  margin-top:44px;
-  padding:42px 28px;
-  text-align:center;
-  border-radius:24px;
-  background:#f7f9fc;
-  border:1px solid #e5eaf1;
-}
-
-.gf-cta h3{
-  margin:0 0 20px;
-  color:#062b5b;
-  font-size:30px;
-  line-height:1;
-  font-weight:900;
-  letter-spacing:-.03em;
-  text-transform:uppercase;
-}
-
-.gf-cta-btn{
-  display:inline-flex;
-  align-items:center;
-  justify-content:center;
-  min-height:54px;
-  padding:0 28px;
-  background:#062b5b;
-  color:#fff;
-  text-decoration:none;
-  font-size:13px;
-  font-weight:900;
-  letter-spacing:.08em;
-  text-transform:uppercase;
-  border-radius:4px;
-  transition:.25s ease;
-}
-
-.gf-cta-btn:hover{
-  background:#d72638;
-}
-
-.gf-cta p{
-  margin:18px auto 0;
-  max-width:480px;
-  color:#4b5563;
-  font-size:15px;
-  line-height:1.55;
-}
-
-@media (max-width:768px){
-  .gary-faq{
-    padding:72px 20px;
-  }
-
-  .gf-head{
-    text-align:left;
-    margin-bottom:32px;
-  }
-
-  .gf-head h2{
-    font-size:36px;
-  }
-
-  .gf-item summary{
-    padding:20px 54px 20px 20px;
-    font-size:18px;
-  }
-
-  .gf-item summary:after{
-    right:20px;
-  }
-
-  .gf-item p{
-    padding:0 20px 20px;
-  }
-
-  .gf-cta{
-    margin-top:34px;
-    padding:34px 22px;
-  }
-
-  .gf-cta h3{
-    font-size:26px;
-  }
-}
-</style>
-
-<script>
-document.querySelectorAll(".gary-faq .gf-item").forEach((item) => {
-  item.addEventListener("toggle", () => {
-    if (!item.open) return;
-
-    document.querySelectorAll(".gary-faq .gf-item").forEach((other) => {
-      if (other !== item) {
-        other.removeAttribute("open");
-      }
-    });
-  });
-});
-</script>
+                </div>
+            </div>
+        </section>
 
         <!-- SECTION 5: COMMON QUESTIONS -->
         <section id="faq" class="bg-gray-50 py-16 md:py-24 border-b border-gray-100">
