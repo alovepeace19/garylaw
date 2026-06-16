@@ -242,219 +242,136 @@
   </div>
 
   <div class="gary-mobile-cta">
-
-    <a href="#priorities" class="gary-btn-primary">
-      View Priorities
-    </a>
-
-    <a href="#connect" class="gary-btn-secondary">
-      Contact
-    </a>
-
+    <a href="#priorities" class="gary-btn-primary">View Priorities</a>
+    <a href="#connect" class="gary-btn-secondary">Contact</a>
   </div>
 
 </section>
 
 <style>
-/* Hide on Desktop */
 .gary-mobile-hero{
   display:none;
 }
 
-/* Mobile Only */
 @media (max-width:768px){
 
   .gary-mobile-hero{
     display:block;
-    background:#ffffff;
+    background:#fff;
   }
-
-  /* HERO IMAGE */
 
   .gary-mobile-image-area{
     position:relative;
-
-    height:780px;
-
+    min-height:660px;
     background-image:url("https://gary-law-richmond-demo.pages.dev/images/gary-hero.jpg");
     background-repeat:no-repeat;
     background-size:cover;
-
-    /* adjust if needed */
-    background-position:72% top;
+    background-position:68% top;
+    overflow:hidden;
   }
-
-  /* TEXT BLOCK */
 
   .gary-mobile-copy{
     position:absolute;
-
-    top:140px;
     left:24px;
-
-    width:340px;
-    max-width:calc(100vw - 48px);
-
+    right:24px;
+    bottom:34px;
     z-index:2;
+    max-width:520px;
   }
-
-  /* TAG */
 
   .gary-mobile-tag{
     display:inline-block;
-
-    padding:14px 18px;
-
-    margin-bottom:24px;
-
-    background:#ffffff;
-
+    background:#fff;
     color:#D72638;
-
+    padding:12px 16px;
+    margin-bottom:22px;
     font-size:11px;
-    font-weight:800;
-
-    letter-spacing:.18em;
+    font-weight:900;
+    letter-spacing:.16em;
     text-transform:uppercase;
-
-    box-shadow:
-      0 10px 30px rgba(15,23,42,.08);
+    box-shadow:0 8px 24px rgba(15,23,42,.08);
   }
 
-  /* NAME */
-
   .gary-mobile-copy h1{
-    margin:0 0 24px;
-
+    margin:0 0 20px;
     color:#062B5B;
-
-    font-size:72px;
-    font-weight:900;
-
+    font-size:56px;
     line-height:.92;
-
+    font-weight:900;
     letter-spacing:-.05em;
     text-transform:uppercase;
   }
 
-  /* SLOGAN */
-
   .gary-mobile-slogan{
     border-left:5px solid #D72638;
-
-    padding-left:18px;
-
-    margin-bottom:24px;
+    padding-left:16px;
+    margin-bottom:22px;
   }
 
   .gary-mobile-slogan h2{
     margin:0;
-
     color:#062B5B;
-
-    font-size:30px;
+    font-size:28px;
+    line-height:1.06;
     font-weight:900;
-
-    line-height:1.05;
-
     letter-spacing:-.03em;
     text-transform:uppercase;
   }
 
-  /* DESCRIPTION */
-
   .gary-mobile-copy p{
     margin:0;
-
     color:#111827;
-
-    font-size:17px;
+    font-size:16px;
+    line-height:1.5;
     font-weight:500;
-
-    line-height:1.55;
   }
-
-  /* CTA */
 
   .gary-mobile-cta{
     display:grid;
-
     grid-template-columns:1fr 1fr;
-
     gap:14px;
-
-    padding:24px;
-
-    background:#ffffff;
+    padding:20px 24px 28px;
+    background:#fff;
   }
 
   .gary-mobile-cta a{
-    height:64px;
-
+    min-height:60px;
     display:flex;
     align-items:center;
     justify-content:center;
-
+    text-align:center;
     text-decoration:none;
-
-    font-size:14px;
-    font-weight:800;
-
-    letter-spacing:.05em;
     text-transform:uppercase;
-
-    transition:.25s;
+    font-size:13px;
+    font-weight:900;
+    letter-spacing:.05em;
   }
 
   .gary-btn-primary{
     background:#062B5B;
-    color:#ffffff;
+    color:#fff;
   }
 
   .gary-btn-secondary{
-    background:#ffffff;
-
+    background:#fff;
     color:#062B5B;
-
     border:2px solid #062B5B;
   }
 }
 
-/* Small Phones */
 @media (max-width:480px){
 
   .gary-mobile-image-area{
-    height:700px;
-
-    background-position:74% top;
-  }
-
-  .gary-mobile-copy{
-    top:120px;
-    left:20px;
-
-    width:300px;
+    min-height:620px;
+    background-position:70% top;
   }
 
   .gary-mobile-copy h1{
-    font-size:58px;
+    font-size:50px;
   }
 
   .gary-mobile-slogan h2{
-    font-size:26px;
-  }
-
-  .gary-mobile-copy p{
-    font-size:16px;
-  }
-
-  .gary-mobile-cta{
-    padding:20px;
-  }
-
-  .gary-mobile-cta a{
-    height:58px;
-    font-size:13px;
+    font-size:25px;
   }
 }
 </style>
