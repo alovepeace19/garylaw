@@ -378,7 +378,7 @@
 @media (max-width:768px){
 
   .gary-hero{
-    height:600px;
+    height:560px;
     min-height:0;
   }
 
@@ -390,7 +390,7 @@
   }
 
   .gary-hero-photo img{
-    object-position:72% top;
+    object-position:78% top;
   }
 
   .gary-hero-tag{
@@ -403,88 +403,43 @@
     left:0;
     right:0;
     bottom:0;
-    height:50%;
+    height:48%;
     z-index:1;
     background:linear-gradient(
       to bottom,
       rgba(255,255,255,0) 0%,
-      rgba(255,255,255,.10) 20%,
-      rgba(255,255,255,.82) 60%,
+      rgba(255,255,255,.08) 20%,
+      rgba(255,255,255,.82) 65%,
       #fff 100%
     );
     pointer-events:none;
   }
 
-.gary-hero-content{
-  position:relative;
-  z-index:2;
+  .gary-hero-content{
+    position:relative;
+    z-index:2;
 
-  height:600px;
-  min-height:0;
+    height:560px;
+    min-height:0;
 
-  padding:0 24px 24px;
+    padding:0 24px 24px;
 
-  display:flex;
-  flex-direction:column;
-  justify-content:flex-end;
+    display:flex;
+    flex-direction:column;
+    justify-content:flex-end;
 
-  transform:translateY(-120px);
-}
-
-  .gary-hero-content h1{
-    font-size:40px;
-    line-height:.95;
-    margin:0 0 8px;
+    transform:translateY(-110px);
   }
-
-  .gary-hero-slogan{
-    margin-bottom:70px;
-    padding-left:14px;
-  }
-
-  .gary-hero-slogan h2{
-    font-size:22px;
-    line-height:1.08;
-  }
-
-  .gary-hero-content p{
-    font-size:14px;
-    line-height:1.45;
-    margin:0 0 12px;
-  }
-
-  .gary-hero-affiliation{
-    display:block;
-    color:#D72638;
-    font-size:11px;
-    font-weight:800;
-    letter-spacing:.12em;
-    text-transform:uppercase;
-    margin:0 0 16px;
-  }
-
-  .gary-hero-cta{
-    display:grid;
-    grid-template-columns:1fr 1fr;
-    gap:12px;
-  }
-
-  .gary-hero-cta a{
-    min-height:54px;
-    font-size:12px;
-  }
-}
-
-@media (max-width:768px){
 
   .gary-hero-content h1{
     font-size:36px;
+    line-height:.95;
     margin:0 0 18px;
   }
 
   .gary-hero-slogan{
-    margin-bottom:28px;
     padding-left:14px;
+    margin-bottom:60px;
   }
 
   .gary-hero-slogan h2{
@@ -499,7 +454,24 @@
   }
 
   .gary-hero-affiliation{
+    display:block;
+    color:#D72638;
+    font-size:11px;
+    font-weight:800;
+    letter-spacing:.12em;
+    text-transform:uppercase;
     margin:0 0 18px;
+  }
+
+  .gary-hero-cta{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:12px;
+  }
+
+  .gary-hero-cta a{
+    min-height:50px;
+    font-size:11px;
   }
 }
     
