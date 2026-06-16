@@ -171,561 +171,309 @@
     <!-- MAIN APP CONTENT PANELS -->
     <main class="flex-grow">
 
-<!-- HERO -->
-<section id="hero" class="gary-hero">
-
-  <!-- Image -->
-  <div class="gary-hero-photo">
-    <img
-      src="https://gary-law-richmond-demo.pages.dev/images/gary-hero.jpg"
-      alt="Gary Law for Richmond City Council"
-    >
-  </div>
-
-  <!-- Content -->
-  <div class="gary-hero-content">
-
-    <div class="gary-hero-tag">
-      Richmond City Council Candidate
-    </div>
-
-    <h1>Gary Law</h1>
-
-    <div class="gary-hero-slogan">
-      <h2>
-        LAW FOR SAFETY.<br>
-        LAW FOR RICHMOND.
-      </h2>
-    </div>
-
-    <p>
-      Former RCMP Senior Officer.<br>
-      Community Policing Award Recipient.
-    </p>
-
-    <div class="gary-hero-cta">
-      <a href="#priorities" class="primary">View Priorities</a>
-      <a href="#connect" class="secondary">Contact</a>
-    </div>
-
-  </div>
-
-</section>
-
-<!-- HERO -->
-<section id="hero" class="relative overflow-hidden bg-white">
-
-  <!-- Background Image -->
-  <img
-    src="https://gary-law-richmond-demo.pages.dev/images/gary-hero.jpg"
-    alt="Gary Law for Richmond City Council"
-    class="hero-img"
-  >
-
-  <!-- Mobile / Desktop Content -->
-  <div class="hero-layer">
-    <div class="hero-inner">
-
-      <div class="hero-content">
-
-        <div class="hero-copy">
-
-          <div class="hero-tag">
-            Richmond City Council Candidate
-          </div>
-
-          <h1 class="hero-name">
-            Gary Law
-          </h1>
-
-          <div class="hero-slogan-wrap">
-            <h2 class="hero-slogan">
-              LAW FOR SAFETY.<br>
-              LAW FOR RICHMOND.
-            </h2>
-          </div>
-
-          <p class="hero-desc">
-            Former RCMP Senior Officer.<br>
-            Community Policing Award Recipient.
-          </p>
-
-        </div>
-
-        <div class="hero-spacer"></div>
-
-        <div class="hero-cta">
-          <a href="#priorities" class="hero-btn hero-btn-primary">
-            View Priorities
-          </a>
-
-          <a href="#connect" class="hero-btn hero-btn-secondary">
-            Contact
-          </a>
-        </div>
-
-      </div>
-
-    </div>
-  </div>
-
-</section>
-
-<style>
-  #hero{
-    height: calc(100vh - 80px);
-    min-height: 720px;
-  }
-
-  #hero .hero-img{
-    position:absolute;
-    inset:0;
-    width:100%;
-    height:100%;
-    object-fit:cover;
-    object-position:74% center;
-  }
-
-#hero .hero-img{
-  filter:
-    brightness(1.03)
-    contrast(1.08)
-    saturate(0.90)
-    hue-rotate(-3deg);
-}
-
-  #hero::before{
-    content:"";
-    position:absolute;
-    inset:0;
-    z-index:1;
-    pointer-events:none;
-  }
-
-  #hero .hero-layer{
-    position:relative;
-    z-index:2;
-    height:100%;
-  }
-
-  #hero .hero-inner{
-    max-width:1280px;
-    height:100%;
-    margin:0 auto;
-    padding:0 32px;
-  }
-
-  #hero .hero-content{
-    height:100%;
-    max-width:650px;
-    display:flex;
-    flex-direction:column;
-    justify-content:center;
-  }
-
-  #hero .hero-tag{
-    display:inline-block;
-    width:max-content;
-    background:#fff;
-    color:#D72638;
-    font-size:13px;
-    font-weight:800;
-    letter-spacing:.22em;
-    text-transform:uppercase;
-    padding:14px 18px;
-    box-shadow:0 8px 24px rgba(15,23,42,.08);
-  }
-
-  #hero .hero-name{
-    margin-top:30px;
-    color:#062B5B;
-    font-size:clamp(56px,5.1vw,92px);
-    line-height:.95;
-    font-weight:900;
-    letter-spacing:-.04em;
-    text-transform:uppercase;
-  }
-
-  #hero .hero-slogan-wrap{
-    margin-top:28px;
-    border-left:5px solid #D72638;
-    padding-left:24px;
-  }
-
-  #hero .hero-slogan{
-    color:#062B5B;
-    font-size:clamp(36px,3.3vw,58px);
-    line-height:1.06;
-    font-weight:900;
-    letter-spacing:-.035em;
-    text-transform:uppercase;
-  }
-
-  #hero .hero-desc{
-    margin-top:28px;
-    color:#111827;
-    font-size:21px;
-    line-height:1.45;
-    font-weight:500;
-  }
-
-  #hero .hero-cta{
-    margin-top:42px;
-    display:flex;
-    gap:18px;
-  }
-
-  #hero .hero-btn{
-    min-width:190px;
-    display:inline-flex;
-    align-items:center;
-    justify-content:center;
-    padding:18px 28px;
-    font-size:14px;
-    font-weight:900;
-    letter-spacing:.08em;
-    text-transform:uppercase;
-    transition:.25s ease;
-  }
-
-  #hero .hero-btn-primary{
-    background:#062B5B;
-    color:#fff;
-  }
-
-  #hero .hero-btn-primary:hover{
-    background:#031f43;
-  }
-
-  #hero .hero-btn-secondary{
-    background:rgba(255,255,255,.72);
-    color:#062B5B;
-    border:2px solid #062B5B;
-  }
-
-  #hero .hero-btn-secondary:hover{
-    background:#fff;
-  }
-
-  /* Tablet */
-  @media (max-width:1024px){
-    #hero{
-      min-height:700px;
+<section id="gary-hero">
+  <style>
+    #gary-hero,
+    #gary-hero * {
+      box-sizing: border-box;
     }
 
-    #hero .hero-img{
-      object-position:70% center;
+    #gary-hero {
+      --navy: #062f66;
+      --red: #e51b35;
+      --text: #061a35;
+
+      position: relative;
+      width: 100%;
+      min-height: 760px;
+      overflow: hidden;
+      font-family: Arial, Helvetica, sans-serif;
+      background: #f4f7fb;
     }
 
-    #hero .hero-content{
-      max-width:590px;
-    }
-  }
-
-  /* Mobile */
-  @media (max-width:768px){
-
-    #hero{
-      height:calc(100vh - 98px);
-      min-height:780px;
+    #gary-hero .hero-bg {
+      position: absolute;
+      inset: 0;
+      background-image: url("https://garylaw.ca/images/gary-hero.jpg");
+      background-size: cover;
+      background-position: 78% center;
+      background-repeat: no-repeat;
+      z-index: 1;
     }
 
-    #hero .hero-img{
-      object-position:58% center;
+    #gary-hero .hero-content {
+      position: relative;
+      z-index: 2;
+      width: min(1200px, 100%);
+      min-height: 760px;
+      margin: 0 auto;
+      padding: 120px 48px 80px;
+      display: flex;
+      align-items: center;
     }
 
-    #hero::before{
-      background:linear-gradient(
-        90deg,
-        rgba(255,255,255,.88) 0%,
-        rgba(255,255,255,.66) 42%,
-        rgba(255,255,255,.12) 72%,
-        rgba(255,255,255,0) 100%
-      );
+    #gary-hero .hero-copy {
+      max-width: 560px;
     }
 
-    #hero .hero-inner{
-      padding:0 26px;
+    #gary-hero .eyebrow {
+      display: inline-block;
+      background: rgba(255, 255, 255, 0.92);
+      color: var(--red);
+      font-size: 15px;
+      font-weight: 800;
+      letter-spacing: 7px;
+      padding: 18px 24px;
+      margin-bottom: 34px;
+      text-transform: uppercase;
+      box-shadow: 0 12px 30px rgba(0,0,0,0.05);
     }
 
-    #hero .hero-content{
-      max-width:100%;
-      justify-content:flex-start;
-      padding-top:220px;
-      padding-bottom:28px;
+    #gary-hero h1 {
+      margin: 0 0 28px;
+      color: var(--navy);
+      font-size: clamp(64px, 6vw, 98px);
+      line-height: 0.95;
+      font-weight: 900;
+      letter-spacing: -4px;
+      text-transform: uppercase;
     }
 
-    #hero .hero-copy{
-      max-width:430px;
+    #gary-hero .tagline {
+      position: relative;
+      margin: 0 0 32px;
+      padding-left: 32px;
+      color: var(--navy);
+      font-size: clamp(38px, 4vw, 58px);
+      line-height: 1.08;
+      font-weight: 900;
+      letter-spacing: -2px;
+      text-transform: uppercase;
     }
 
-    #hero .hero-tag{
-      font-size:11px;
-      letter-spacing:.18em;
-      padding:12px 14px;
+    #gary-hero .tagline::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 6px;
+      bottom: 8px;
+      width: 6px;
+      background: var(--red);
     }
 
-    #hero .hero-name{
-      margin-top:26px;
-      font-size:54px;
-      line-height:.92;
+    #gary-hero .intro {
+      margin: 0 0 42px;
+      color: #001326;
+      font-size: 27px;
+      line-height: 1.35;
+      font-weight: 500;
     }
 
-    #hero .hero-slogan-wrap{
-      margin-top:22px;
-      padding-left:18px;
-      border-left-width:5px;
+    #gary-hero .hero-actions {
+      display: flex;
+      gap: 22px;
+      flex-wrap: wrap;
     }
 
-    #hero .hero-slogan{
-      font-size:30px;
-      line-height:1.08;
-      letter-spacing:-.03em;
+    #gary-hero .hero-btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-width: 230px;
+      min-height: 74px;
+      padding: 18px 28px;
+      font-size: 17px;
+      font-weight: 900;
+      letter-spacing: 1px;
+      text-decoration: none;
+      text-transform: uppercase;
+      border: 2px solid var(--navy);
+      transition: all .2s ease;
     }
 
-    #hero .hero-desc{
-      margin-top:22px;
-      font-size:17px;
-      line-height:1.48;
+    #gary-hero .hero-btn.primary {
+      background: var(--navy);
+      color: #fff;
     }
 
-    #hero .hero-spacer{
-      flex:1;
+    #gary-hero .hero-btn.secondary {
+      background: rgba(255,255,255,.75);
+      color: var(--navy);
     }
 
-    #hero .hero-cta{
-      margin-top:auto;
-      display:grid;
-      grid-template-columns:1fr 1fr;
-      gap:12px;
-      width:100%;
+    #gary-hero .hero-btn:hover {
+      transform: translateY(-2px);
     }
 
-    #hero .hero-btn{
-      min-width:0;
-      width:100%;
-      padding:16px 10px;
-      font-size:13px;
-    }
-  }
+    /* Tablet */
+    @media (max-width: 1024px) {
+      #gary-hero {
+        min-height: 680px;
+      }
 
-  /* Small Mobile */
-  @media (max-width:480px){
+      #gary-hero .hero-bg {
+        background-position: 72% center;
+      }
 
-    #hero{
-      min-height:760px;
-    }
+      #gary-hero .hero-content {
+        min-height: 680px;
+        padding: 90px 34px 60px;
+      }
 
-    #hero .hero-img{
-      object-position:56% center;
-        
-    }
-
-    #hero .hero-inner{
-      padding:0 24px;
+      #gary-hero .hero-copy {
+        max-width: 520px;
+      }
     }
 
-    #hero .hero-content{
-      padding-top:210px;
+    /* Mobile */
+    @media (max-width: 767px) {
+      #gary-hero {
+        min-height: auto;
+        background: #fff;
+      }
+
+      #gary-hero .hero-bg {
+        position: relative;
+        height: 430px;
+        background-size: cover;
+        background-position: 66% top;
+      }
+
+      #gary-hero .hero-bg::after {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background: linear-gradient(
+          to bottom,
+          rgba(255,255,255,0) 45%,
+          rgba(255,255,255,.82) 100%
+        );
+      }
+
+      #gary-hero .hero-content {
+        min-height: auto;
+        display: block;
+        padding: 0;
+        margin-top: -145px;
+      }
+
+      #gary-hero .hero-copy {
+        position: relative;
+        max-width: none;
+        width: calc(100% - 32px);
+        margin: 0 auto;
+        padding: 0 0 26px;
+      }
+
+      #gary-hero .eyebrow {
+        font-size: 12px;
+        letter-spacing: 4px;
+        padding: 16px 18px;
+        margin-bottom: 22px;
+        width: 100%;
+        text-align: center;
+      }
+
+      #gary-hero h1 {
+        font-size: 54px;
+        line-height: .94;
+        letter-spacing: -3px;
+        margin-bottom: 22px;
+      }
+
+      #gary-hero .tagline {
+        font-size: 28px;
+        line-height: 1.08;
+        letter-spacing: -1px;
+        padding-left: 22px;
+        margin-bottom: 26px;
+      }
+
+      #gary-hero .tagline::before {
+        width: 5px;
+        top: 3px;
+        bottom: 5px;
+      }
+
+      #gary-hero .intro {
+        font-size: 21px;
+        line-height: 1.35;
+        margin-bottom: 28px;
+      }
+
+      #gary-hero .hero-actions {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 14px;
+      }
+
+      #gary-hero .hero-btn {
+        min-width: 0;
+        width: 100%;
+        min-height: 74px;
+        font-size: 16px;
+        padding: 16px 12px;
+      }
+
+      #gary-hero .hero-btn.secondary {
+        background: #fff;
+      }
     }
 
-    #hero .hero-name{
-      font-size:50px;
+    /* Small mobile */
+    @media (max-width: 420px) {
+      #gary-hero .hero-bg {
+        height: 400px;
+        background-position: 63% top;
+      }
+
+      #gary-hero .hero-content {
+        margin-top: -132px;
+      }
+
+      #gary-hero h1 {
+        font-size: 48px;
+      }
+
+      #gary-hero .tagline {
+        font-size: 25px;
+      }
+
+      #gary-hero .intro {
+        font-size: 19px;
+      }
+
+      #gary-hero .hero-actions {
+        grid-template-columns: 1fr;
+      }
     }
+  </style>
 
-    #hero .hero-slogan{
-      font-size:28px;
-    }
+  <div class="hero-bg" aria-hidden="true"></div>
 
-    #hero .hero-desc{
-      font-size:16px;
-    }
-  }
-
-  @media (max-width:380px){
-
-    #hero .hero-content{
-      padding-top:190px;
-    }
-
-    #hero .hero-name{
-      font-size:44px;
-    }
-
-    #hero .hero-slogan{
-      font-size:25px;
-    }
-
-    #hero .hero-btn{
-      font-size:12px;
-      padding:14px 8px;
-    }
-  }
-</style>
-
-<!-- MOBILE HERO ONLY -->
-<section class="gary-mobile-hero">
-
-  <div class="gary-mobile-image-area">
-
-    <div class="gary-mobile-copy">
-
-      <div class="gary-mobile-tag">
-        Richmond City Council Candidate
-      </div>
+  <div class="hero-content">
+    <div class="hero-copy">
+      <div class="eyebrow">Richmond City Council Candidate</div>
 
       <h1>Gary Law</h1>
 
-      <div class="gary-mobile-slogan">
-        <h2>
-          LAW FOR SAFETY.<br>
-          LAW FOR RICHMOND.
-        </h2>
+      <div class="tagline">
+        LAW FOR SAFETY.<br>
+        LAW FOR RICHMOND.
       </div>
 
-      <p>
+      <p class="intro">
         Former RCMP Senior Officer.<br>
         Community Policing Award Recipient.
       </p>
 
+      <div class="hero-actions">
+        <a href="#priorities" class="hero-btn primary">View Priorities</a>
+        <a href="#contact" class="hero-btn secondary">Contact</a>
+      </div>
     </div>
-
   </div>
-
-  <div class="gary-mobile-cta">
-    <a href="#priorities" class="gary-btn-primary">View Priorities</a>
-    <a href="#connect" class="gary-btn-secondary">Contact</a>
-  </div>
-
 </section>
-
-<style>
-.gary-mobile-hero{
-  display:none;
-}
-
-@media (max-width:768px){
-
-  .gary-mobile-hero{
-    display:block;
-    background:#fff;
-  }
-
-  .gary-mobile-image-area{
-    position:relative;
-    min-height:660px;
-    background-image:url("https://gary-law-richmond-demo.pages.dev/images/gary-hero.jpg");
-    background-repeat:no-repeat;
-    background-size:cover;
-    background-position:68% top;
-    overflow:hidden;
-  }
-
-  .gary-mobile-copy{
-    position:absolute;
-    left:24px;
-    right:24px;
-    bottom:34px;
-    z-index:2;
-    max-width:520px;
-  }
-
-  .gary-mobile-tag{
-    display:inline-block;
-    background:#fff;
-    color:#D72638;
-    padding:12px 16px;
-    margin-bottom:22px;
-    font-size:11px;
-    font-weight:900;
-    letter-spacing:.16em;
-    text-transform:uppercase;
-    box-shadow:0 8px 24px rgba(15,23,42,.08);
-  }
-
-  .gary-mobile-copy h1{
-    margin:0 0 20px;
-    color:#062B5B;
-    font-size:56px;
-    line-height:.92;
-    font-weight:900;
-    letter-spacing:-.05em;
-    text-transform:uppercase;
-  }
-
-  .gary-mobile-slogan{
-    border-left:5px solid #D72638;
-    padding-left:16px;
-    margin-bottom:22px;
-  }
-
-  .gary-mobile-slogan h2{
-    margin:0;
-    color:#062B5B;
-    font-size:28px;
-    line-height:1.06;
-    font-weight:900;
-    letter-spacing:-.03em;
-    text-transform:uppercase;
-  }
-
-  .gary-mobile-copy p{
-    margin:0;
-    color:#111827;
-    font-size:16px;
-    line-height:1.5;
-    font-weight:500;
-  }
-
-  .gary-mobile-cta{
-    display:grid;
-    grid-template-columns:1fr 1fr;
-    gap:14px;
-    padding:20px 24px 28px;
-    background:#fff;
-  }
-
-  .gary-mobile-cta a{
-    min-height:60px;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    text-align:center;
-    text-decoration:none;
-    text-transform:uppercase;
-    font-size:13px;
-    font-weight:900;
-    letter-spacing:.05em;
-  }
-
-  .gary-btn-primary{
-    background:#062B5B;
-    color:#fff;
-  }
-
-  .gary-btn-secondary{
-    background:#fff;
-    color:#062B5B;
-    border:2px solid #062B5B;
-  }
-}
-
-@media (max-width:480px){
-
-  .gary-mobile-image-area{
-    min-height:620px;
-    background-position:70% top;
-  }
-
-  .gary-mobile-copy h1{
-    font-size:50px;
-  }
-
-  .gary-mobile-slogan h2{
-    font-size:25px;
-  }
-}
-</style>
         
         <!-- SECTION 1.2: GARY CREDENTIALS / TRUST INDICATORS -->
         <section class="bg-gray-50 py-8 border-b border-gray-100">
