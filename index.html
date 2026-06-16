@@ -374,149 +374,388 @@
 }    
 </style>
 
-<!-- MOBILE HERO ONLY -->
-<section id="gary-mobile-hero">
+<section class="gary-mobile-hero">
+  <header class="gmh-header">
+    <div>
+      <div class="gmh-logo">GARY LAW</div>
+      <div class="gmh-sublogo">RICHMOND CITY COUNCIL</div>
+    </div>
 
-  <div class="gmh-photo">
+    <button class="gmh-menu" aria-label="Open menu">
+      <span></span><span></span><span></span>
+    </button>
+  </header>
+
+  <div class="gmh-hero">
+    <div class="gmh-hero-text">
+      <h1>GARY<br>LAW</h1>
+      <div class="gmh-red-line"></div>
+      <p>FOR RICHMOND CITY<br>COUNCIL</p>
+    </div>
+
     <img
-      src="https://gary-law-richmond-demo.pages.dev/images/gary-hero.jpg"
-      alt="Gary Law for Richmond City Council"
+      src="https://garylaw.ca/images/gary-hero.jpg"
+      alt="Gary Law"
+      class="gmh-photo"
     >
   </div>
 
   <div class="gmh-content">
-    <h1>Gary Law</h1>
-
     <div class="gmh-slogan">
-      LAW FOR SAFETY.<br>
-      LAW FOR RICHMOND.
+      <span></span>
+      <h2>LAW FOR SAFETY.<br>LAW FOR RICHMOND.</h2>
     </div>
 
-    <p>
-      Former RCMP Senior Officer.<br>
-      Community Policing Award Recipient.
-    </p>
+    <div class="gmh-points">
+      <div class="gmh-point">
+        <div class="gmh-icon" aria-hidden="true">
+          <i data-lucide="shield-check"></i>
+        </div>
+        <p>Former RCMP<br>Senior Officer</p>
+      </div>
+
+      <div class="gmh-divider"></div>
+
+      <div class="gmh-point">
+        <div class="gmh-icon" aria-hidden="true">
+          <i data-lucide="award"></i>
+        </div>
+        <p>Community Policing<br>Award Recipient</p>
+      </div>
+    </div>
 
     <div class="gmh-affiliation">
-      Advance Richmond Candidate
+      <div class="gmh-affiliation-line"></div>
+      <div class="gmh-affiliation-text">
+        <span>Advance Richmond</span>
+        <small>Official Candidate</small>
+      </div>
+      <div class="gmh-affiliation-line"></div>
     </div>
 
     <div class="gmh-cta">
-      <a href="#priorities">Priorities</a>
-      <a href="#connect">Contact</a>
+      <a href="#priorities" class="gmh-btn primary">PRIORITIES</a>
+      <a href="#contact" class="gmh-btn secondary">CONTACT</a>
     </div>
   </div>
-
 </section>
 
 <style>
-#gary-mobile-hero{
-  display:none;
+.gary-mobile-hero,
+.gary-mobile-hero *{
+  box-sizing:border-box;
 }
 
-@media (max-width:768px){
+.gary-mobile-hero{
+  width:100%;
+  max-width:480px;
+  margin:0 auto;
+  background:#fff;
+  color:#082f63;
+  font-family:Arial, Helvetica, sans-serif;
+  overflow:hidden;
+}
 
-  .gary-hero{
-    display:none !important;
+/* Header */
+.gmh-header{
+  height:76px;
+  padding:14px 22px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  background:#fff;
+}
+
+.gmh-logo{
+  font-size:23px;
+  line-height:1;
+  font-weight:900;
+  letter-spacing:-1px;
+  color:#082f63;
+}
+
+.gmh-sublogo{
+  margin-top:6px;
+  font-size:11px;
+  line-height:1;
+  font-weight:900;
+  letter-spacing:1px;
+  color:#f04b5f;
+}
+
+.gmh-menu{
+  width:30px;
+  height:24px;
+  padding:0;
+  border:0;
+  background:transparent;
+  display:flex;
+  flex-direction:column;
+  justify-content:space-between;
+  cursor:pointer;
+}
+
+.gmh-menu span{
+  display:block;
+  width:22px;
+  height:3px;
+  margin-left:auto;
+  border-radius:999px;
+  background:#082f63;
+}
+
+/* Hero */
+.gmh-hero{
+  position:relative;
+  height:220px;
+  overflow:hidden;
+  background:linear-gradient(105deg,#fff 0%,#f4f6fa 48%,#e8edf4 100%);
+}
+
+.gmh-hero:before{
+  content:"";
+  position:absolute;
+  inset:0;
+  z-index:1;
+  background:
+    linear-gradient(110deg,rgba(255,255,255,.94) 0%,rgba(255,255,255,.76) 35%,rgba(255,255,255,.08) 64%),
+    radial-gradient(circle at 0% 26%,rgba(8,47,99,.08),transparent 45%);
+}
+
+.gmh-hero-text{
+  position:absolute;
+  left:30px;
+  top:35px;
+  z-index:2;
+}
+
+.gmh-hero-text h1{
+  margin:0;
+  font-size:60px;
+  line-height:.88;
+  font-weight:900;
+  letter-spacing:-4px;
+  color:#282b63;
+}
+
+.gmh-red-line{
+  width:42px;
+  height:3px;
+  margin:15px 0 9px;
+  background:#f04b5f;
+}
+
+.gmh-hero-text p{
+  margin:0;
+  font-size:18px;
+  line-height:.95;
+  font-weight:900;
+  letter-spacing:-.5px;
+  color:#282b63;
+}
+
+.gmh-photo{
+  position:absolute;
+  bottom:0;
+  right:-18px;
+  z-index:0;
+  width:auto;
+  height:100%;
+  max-width:none;
+  object-fit:cover;
+  filter:brightness(1.06) contrast(1.03) saturate(1.02);
+}
+
+/* Content */
+.gmh-content{
+  padding:28px 30px 28px;
+  background:#fff;
+}
+
+.gmh-slogan{
+  display:flex;
+  align-items:flex-start;
+  gap:14px;
+  margin-bottom:28px;
+}
+
+.gmh-slogan span{
+  width:4px;
+  height:56px;
+  background:#f04b5f;
+  flex:0 0 auto;
+}
+
+.gmh-slogan h2{
+  margin:0;
+  font-size:24px;
+  line-height:1.14;
+  font-weight:900;
+  letter-spacing:-1px;
+  color:#082f63;
+}
+
+.gmh-points{
+  margin-left:22px;
+  margin-right:10px;
+}
+
+.gmh-point{
+  display:flex;
+  align-items:center;
+  gap:18px;
+}
+
+.gmh-icon{
+  width:58px;
+  height:58px;
+  border-radius:50%;
+  background:#f4f7fb;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  flex:0 0 auto;
+  color:#082f63;
+}
+
+.gmh-icon svg{
+  width:30px;
+  height:30px;
+  stroke:#082f63;
+  stroke-width:2;
+}
+
+.gmh-point p{
+  margin:0;
+  font-size:17px;
+  line-height:1.2;
+  font-weight:800;
+  color:#26345a;
+}
+
+.gmh-divider{
+  height:1px;
+  background:#e5e9f0;
+  margin:20px 0 20px 76px;
+}
+
+/* Affiliation */
+.gmh-affiliation{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:14px;
+  margin:30px 0 32px;
+}
+
+.gmh-affiliation-line{
+  flex:1;
+  max-width:52px;
+  height:1px;
+  background:#d9e2ec;
+}
+
+.gmh-affiliation-text{
+  text-align:center;
+}
+
+.gmh-affiliation-text span{
+  display:block;
+  font-size:13px;
+  font-weight:900;
+  letter-spacing:.8px;
+  color:#e74d5c;
+  text-transform:uppercase;
+}
+
+.gmh-affiliation-text small{
+  display:block;
+  margin-top:4px;
+  font-size:11px;
+  font-weight:800;
+  letter-spacing:1px;
+  color:#7d8793;
+  text-transform:uppercase;
+}
+
+/* CTA */
+.gmh-cta{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:18px;
+}
+
+.gmh-btn{
+  height:54px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  border-radius:4px;
+  text-decoration:none;
+  font-size:13px;
+  font-weight:900;
+  letter-spacing:.4px;
+}
+
+.gmh-btn.primary{
+  background:#082f63;
+  color:#fff;
+  border:2px solid #082f63;
+}
+
+.gmh-btn.secondary{
+  background:#fff;
+  color:#082f63;
+  border:2px solid #082f63;
+}
+
+/* Mobile only */
+@media (min-width:769px){
+  .gary-mobile-hero{
+    display:none;
+  }
+}
+
+/* Small phones */
+@media (max-width:380px){
+  .gmh-header{
+    padding-left:18px;
+    padding-right:18px;
   }
 
-  #gary-mobile-hero{
-    display:block;
-    background:#fff;
+  .gmh-hero-text{
+    left:24px;
   }
 
-  #gary-mobile-hero .gmh-photo{
-    width:100%;
-    height:250px;
-    overflow:hidden;
-    background:#eef1f5;
+  .gmh-hero-text h1{
+    font-size:54px;
   }
 
-  #gary-mobile-hero .gmh-photo img{
-    width:100%;
-    height:100%;
-    object-fit:cover;
-    object-position:100% top;
-    filter:brightness(1.04) contrast(1.04) saturate(.9);
-    transform:scale(1.06);
-    transform-origin:center top;
+  .gmh-hero-text p{
+    font-size:16px;
   }
 
-  #gary-mobile-hero .gmh-content{
-    padding:24px 34px 34px;
+  .gmh-content{
+    padding-left:24px;
+    padding-right:24px;
   }
 
-  #gary-mobile-hero h1{
-    margin:0 0 18px;
-    color:#062B5B;
-    font-size:40px;
-    line-height:.92;
-    font-weight:900;
-    letter-spacing:-.045em;
-    text-transform:uppercase;
+  .gmh-slogan h2{
+    font-size:22px;
   }
 
-  #gary-mobile-hero .gmh-slogan{
-    margin:0 0 18px;
-    border-left:5px solid #D72638;
-    padding-left:16px;
-    color:#062B5B;
-    font-size:23px;
-    line-height:1.08;
-    font-weight:900;
-    letter-spacing:-.035em;
-    text-transform:uppercase;
-  }
-
-  #gary-mobile-hero p{
-    margin:0 0 28px;
-    color:#111827;
-    font-size:15px;
-    line-height:1.45;
-    font-weight:500;
-  }
-
-  #gary-mobile-hero .gmh-affiliation{
-    margin:0 0 28px;
-    color:#D72638;
-    font-size:12px;
-    line-height:1.2;
-    font-weight:800;
-    letter-spacing:.12em;
-    text-transform:uppercase;
-  }
-
-  #gary-mobile-hero .gmh-cta{
-    display:grid;
-    grid-template-columns:1fr 1fr;
-    gap:18px;
-  }
-
-  #gary-mobile-hero .gmh-cta a{
-    height:56px;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    text-decoration:none;
-    text-transform:uppercase;
-    letter-spacing:.08em;
-    font-size:12px;
-    font-weight:900;
-    border-radius:4px;
-  }
-
-  #gary-mobile-hero .gmh-cta a:first-child{
-    background:#062B5B;
-    color:#fff;
-  }
-
-  #gary-mobile-hero .gmh-cta a:last-child{
-    background:#fff;
-    color:#062B5B;
-    border:2px solid #062B5B;
+  .gmh-points{
+    margin-left:14px;
   }
 }
 </style>
+
+<script src="https://unpkg.com/lucide@latest"></script>
+<script>
+  lucide.createIcons();
+</script>
+
+
         
         <!-- SECTION 1.2: GARY CREDENTIALS / TRUST INDICATORS -->
         <section class="bg-gray-50 py-8 border-b border-gray-100">
