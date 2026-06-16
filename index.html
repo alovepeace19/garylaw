@@ -212,6 +212,143 @@
 
 </section>
 
+/* MOBILE HERO */
+@media (max-width:768px){
+  .gary-hero{
+    position:relative;
+    min-height:800px;
+    overflow:hidden;
+    background:#fff;
+  }
+
+  .gary-hero-photo{
+    position:absolute;
+    inset:0;
+    width:100%;
+    height:100%;
+  }
+
+  .gary-hero-photo img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    object-position:63% top;
+    filter:
+      brightness(1.04)
+      contrast(1.06)
+      saturate(.88)
+      hue-rotate(-4deg);
+  }
+
+  .gary-hero::after{
+    content:"";
+    position:absolute;
+    left:0;
+    right:0;
+    bottom:0;
+    height:58%;
+    z-index:1;
+    background:linear-gradient(
+      to bottom,
+      rgba(255,255,255,0) 0%,
+      rgba(255,255,255,.55) 28%,
+      rgba(255,255,255,.92) 62%,
+      #ffffff 100%
+    );
+    pointer-events:none;
+  }
+
+  .gary-hero-content{
+    position:relative;
+    z-index:2;
+    min-height:800px;
+    padding:430px 30px 44px;
+    display:flex;
+    flex-direction:column;
+    justify-content:flex-end;
+  }
+
+  .gary-hero-tag{
+    display:inline-block;
+    width:max-content;
+    max-width:100%;
+    background:#fff;
+    color:#D72638;
+    font-size:12px;
+    font-weight:900;
+    letter-spacing:.18em;
+    text-transform:uppercase;
+    padding:14px 20px;
+    box-shadow:0 10px 24px rgba(15,23,42,.12);
+    margin-bottom:26px;
+  }
+
+  .gary-hero-content h1{
+    color:#062B5B;
+    font-size:54px;
+    line-height:.9;
+    font-weight:900;
+    letter-spacing:-.06em;
+    text-transform:uppercase;
+    margin:0 0 22px;
+  }
+
+  .gary-hero-slogan{
+    border-left:5px solid #D72638;
+    padding-left:18px;
+    margin-bottom:22px;
+  }
+
+  .gary-hero-slogan h2{
+    color:#062B5B;
+    font-size:31px;
+    line-height:1.08;
+    font-weight:900;
+    letter-spacing:-.04em;
+    text-transform:uppercase;
+    margin:0;
+  }
+
+  .gary-hero-content p{
+    color:#111827;
+    font-size:18px;
+    line-height:1.45;
+    font-weight:500;
+    margin:0 0 26px;
+  }
+
+  .gary-hero-cta{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:12px;
+  }
+
+  .gary-hero-cta a{
+    min-height:58px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    font-size:12px;
+    font-weight:900;
+    letter-spacing:.08em;
+    text-transform:uppercase;
+    text-decoration:none;
+    border-radius:0;
+  }
+
+  .gary-hero-cta .primary{
+    background:#062B5B;
+    color:#fff;
+  }
+
+  .gary-hero-cta .secondary{
+    background:#fff;
+    color:#062B5B;
+    border:2px solid #062B5B;
+  }
+}
+
 <style>
   .gary-hero{
     width:100%;
