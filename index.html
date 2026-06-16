@@ -390,6 +390,355 @@
 
 }
 </style>
+
+<!-- HERO -->
+<section id="hero" class="relative overflow-hidden bg-white">
+
+  <!-- Background Image -->
+  <img
+    src="https://gary-law-richmond-demo.pages.dev/images/gary-hero.jpg"
+    alt="Gary Law for Richmond City Council"
+    class="hero-img"
+  >
+
+  <!-- Mobile / Desktop Content -->
+  <div class="hero-layer">
+    <div class="hero-inner">
+
+      <div class="hero-content">
+
+        <div class="hero-copy">
+
+          <div class="hero-tag">
+            Richmond City Council Candidate
+          </div>
+
+          <h1 class="hero-name">
+            Gary Law
+          </h1>
+
+          <div class="hero-slogan-wrap">
+            <h2 class="hero-slogan">
+              LAW FOR SAFETY.<br>
+              LAW FOR RICHMOND.
+            </h2>
+          </div>
+
+          <p class="hero-desc">
+            Former RCMP Senior Officer.<br>
+            Community Policing Award Recipient.
+          </p>
+
+        </div>
+
+        <div class="hero-spacer"></div>
+
+        <div class="hero-cta">
+          <a href="#priorities" class="hero-btn hero-btn-primary">
+            View Priorities
+          </a>
+
+          <a href="#connect" class="hero-btn hero-btn-secondary">
+            Contact
+          </a>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+
+</section>
+
+<style>
+  #hero{
+    height: calc(100vh - 80px);
+    min-height: 720px;
+  }
+
+  #hero .hero-img{
+    position:absolute;
+    inset:0;
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    object-position:74% center;
+  }
+
+  #hero::before{
+    content:"";
+    position:absolute;
+    inset:0;
+    z-index:1;
+    background:linear-gradient(
+      90deg,
+      rgba(255,255,255,.92) 0%,
+      rgba(255,255,255,.78) 36%,
+      rgba(255,255,255,.20) 68%,
+      rgba(255,255,255,0) 100%
+    );
+    pointer-events:none;
+  }
+
+  #hero .hero-layer{
+    position:relative;
+    z-index:2;
+    height:100%;
+  }
+
+  #hero .hero-inner{
+    max-width:1280px;
+    height:100%;
+    margin:0 auto;
+    padding:0 32px;
+  }
+
+  #hero .hero-content{
+    height:100%;
+    max-width:650px;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+  }
+
+  #hero .hero-tag{
+    display:inline-block;
+    width:max-content;
+    background:#fff;
+    color:#D72638;
+    font-size:13px;
+    font-weight:800;
+    letter-spacing:.22em;
+    text-transform:uppercase;
+    padding:14px 18px;
+    box-shadow:0 8px 24px rgba(15,23,42,.08);
+  }
+
+  #hero .hero-name{
+    margin-top:30px;
+    color:#062B5B;
+    font-size:clamp(56px,5.1vw,92px);
+    line-height:.95;
+    font-weight:900;
+    letter-spacing:-.04em;
+    text-transform:uppercase;
+  }
+
+  #hero .hero-slogan-wrap{
+    margin-top:28px;
+    border-left:5px solid #D72638;
+    padding-left:24px;
+  }
+
+  #hero .hero-slogan{
+    color:#062B5B;
+    font-size:clamp(36px,3.3vw,58px);
+    line-height:1.06;
+    font-weight:900;
+    letter-spacing:-.035em;
+    text-transform:uppercase;
+  }
+
+  #hero .hero-desc{
+    margin-top:28px;
+    color:#111827;
+    font-size:21px;
+    line-height:1.45;
+    font-weight:500;
+  }
+
+  #hero .hero-cta{
+    margin-top:42px;
+    display:flex;
+    gap:18px;
+  }
+
+  #hero .hero-btn{
+    min-width:190px;
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    padding:18px 28px;
+    font-size:14px;
+    font-weight:900;
+    letter-spacing:.08em;
+    text-transform:uppercase;
+    transition:.25s ease;
+  }
+
+  #hero .hero-btn-primary{
+    background:#062B5B;
+    color:#fff;
+  }
+
+  #hero .hero-btn-primary:hover{
+    background:#031f43;
+  }
+
+  #hero .hero-btn-secondary{
+    background:rgba(255,255,255,.72);
+    color:#062B5B;
+    border:2px solid #062B5B;
+  }
+
+  #hero .hero-btn-secondary:hover{
+    background:#fff;
+  }
+
+  /* Tablet */
+  @media (max-width:1024px){
+    #hero{
+      min-height:700px;
+    }
+
+    #hero .hero-img{
+      object-position:70% center;
+    }
+
+    #hero .hero-content{
+      max-width:590px;
+    }
+  }
+
+  /* Mobile */
+  @media (max-width:768px){
+
+    #hero{
+      height:calc(100vh - 98px);
+      min-height:780px;
+    }
+
+    #hero .hero-img{
+      object-position:58% center;
+    }
+
+    #hero::before{
+      background:linear-gradient(
+        90deg,
+        rgba(255,255,255,.88) 0%,
+        rgba(255,255,255,.66) 42%,
+        rgba(255,255,255,.12) 72%,
+        rgba(255,255,255,0) 100%
+      );
+    }
+
+    #hero .hero-inner{
+      padding:0 26px;
+    }
+
+    #hero .hero-content{
+      max-width:100%;
+      justify-content:flex-start;
+      padding-top:220px;
+      padding-bottom:28px;
+    }
+
+    #hero .hero-copy{
+      max-width:430px;
+    }
+
+    #hero .hero-tag{
+      font-size:11px;
+      letter-spacing:.18em;
+      padding:12px 14px;
+    }
+
+    #hero .hero-name{
+      margin-top:26px;
+      font-size:54px;
+      line-height:.92;
+    }
+
+    #hero .hero-slogan-wrap{
+      margin-top:22px;
+      padding-left:18px;
+      border-left-width:5px;
+    }
+
+    #hero .hero-slogan{
+      font-size:30px;
+      line-height:1.08;
+      letter-spacing:-.03em;
+    }
+
+    #hero .hero-desc{
+      margin-top:22px;
+      font-size:17px;
+      line-height:1.48;
+    }
+
+    #hero .hero-spacer{
+      flex:1;
+    }
+
+    #hero .hero-cta{
+      margin-top:auto;
+      display:grid;
+      grid-template-columns:1fr 1fr;
+      gap:12px;
+      width:100%;
+    }
+
+    #hero .hero-btn{
+      min-width:0;
+      width:100%;
+      padding:16px 10px;
+      font-size:13px;
+    }
+  }
+
+  /* Small Mobile */
+  @media (max-width:480px){
+
+    #hero{
+      min-height:760px;
+    }
+
+    #hero .hero-img{
+      object-position:56% center;
+    }
+
+    #hero .hero-inner{
+      padding:0 24px;
+    }
+
+    #hero .hero-content{
+      padding-top:210px;
+    }
+
+    #hero .hero-name{
+      font-size:50px;
+    }
+
+    #hero .hero-slogan{
+      font-size:28px;
+    }
+
+    #hero .hero-desc{
+      font-size:16px;
+    }
+  }
+
+  @media (max-width:380px){
+
+    #hero .hero-content{
+      padding-top:190px;
+    }
+
+    #hero .hero-name{
+      font-size:44px;
+    }
+
+    #hero .hero-slogan{
+      font-size:25px;
+    }
+
+    #hero .hero-btn{
+      font-size:12px;
+      padding:14px 8px;
+    }
+  }
+</style>
         
         <!-- SECTION 1.2: GARY CREDENTIALS / TRUST INDICATORS -->
         <section class="bg-gray-50 py-8 border-b border-gray-100">
