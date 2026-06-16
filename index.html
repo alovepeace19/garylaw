@@ -419,21 +419,34 @@
     
 @media (max-width:768px){
   .gary-hero{
-    min-height:760px;
+    min-height:820px;
+  }
+
+  .gary-hero-photo{
+    position:absolute;
+    inset:0;
+    width:100%;
+    height:100%;
   }
 
   .gary-hero-photo img{
-    object-position:54% top;
+    object-position:56% top;
   }
 
   .gary-hero::after{
-    height:58%;
+    height:60%;
   }
 
   .gary-hero-content{
-    min-height:760px;
-    padding:380px 30px 44px;
-    justify-content:flex-start;
+    position:relative;
+    z-index:2;
+    min-height:820px;
+
+    padding:430px 30px 44px;
+
+    display:flex;
+    flex-direction:column;
+    justify-content:flex-end;
   }
 
   .gary-hero-tag{
