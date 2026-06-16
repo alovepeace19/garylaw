@@ -744,94 +744,122 @@
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 
                 <header class="text-center max-w-3xl mx-auto space-y-4 mb-16">
-                    <span class="text-xs font-extrabold text-campaignRed-600 tracking-widest uppercase">Platform Pillars</span>
                     <h2 class="text-3xl sm:text-4xl font-extrabold text-navy-800 tracking-tight">Key Priorities</h2>
-                    <p class="text-gray-600 text-sm">Strategic objectives focused on creating safe neighborhoods, transparent municipal administration, and smart, sustainable infrastructure.</p>
+                    <p class="text-gray-600 text-sm">Five priorities to build a safer Richmond.</p>
                 </header>
 
                 <!-- Priority Cards Grid -->
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                     
-                    <!-- Card 1: Community Safety -->
-                    <button type="button" onclick="openPriorityModal('safety')" class="group text-left block bg-white border border-gray-100 rounded-xl p-6 shadow-sm hover:shadow-xl hover:border-navy-200 transition-all duration-300 transform hover:-translate-y-1 w-full">
-                        <div class="flex items-center justify-between mb-4">
-                            <span class="bg-navy-50 text-navy-800 p-3 rounded-lg group-hover:bg-campaignRed-50 group-hover:text-campaignRed-600 transition-all">
-                                <i data-lucide="shield" class="w-6 h-6"></i>
-                            </span>
-                            <span class="text-gray-300 group-hover:text-campaignRed-600 transition-colors">
-                                <i data-lucide="arrow-up-right" class="w-5 h-5"></i>
-                            </span>
-                        </div>
-                        <h3 class="text-xl font-bold text-navy-800 mb-2 group-hover:text-campaignRed-600 transition-colors">Community Safety</h3>
-                        <p class="text-sm text-gray-600 leading-relaxed">
-                            Proactive block watches, dedicated youth protection systems, and collaborative mental health crisis response teams.
-                        </p>
-                    </button>
+<!-- Card 1: Community Safety -->
+<button type="button" onclick="openPriorityModal('safety')" class="group text-left block bg-white border border-gray-100 rounded-xl p-6 shadow-sm hover:shadow-xl hover:border-navy-200 transition-all duration-300 transform hover:-translate-y-1 w-full">
+    <div class="flex items-center justify-between mb-4">
+        <span class="bg-navy-50 text-navy-800 p-3 rounded-lg group-hover:bg-campaignRed-50 group-hover:text-campaignRed-600 transition-all">
+            <i data-lucide="shield" class="w-6 h-6"></i>
+        </span>
+        <span class="text-gray-300 group-hover:text-campaignRed-600 transition-colors">
+            <i data-lucide="arrow-up-right" class="w-5 h-5"></i>
+        </span>
+    </div>
 
-                    <!-- Card 2: Traffic & Transportation -->
-                    <button type="button" onclick="openPriorityModal('traffic')" class="group text-left block bg-white border border-gray-100 rounded-xl p-6 shadow-sm hover:shadow-xl hover:border-navy-200 transition-all duration-300 transform hover:-translate-y-1 w-full">
-                        <div class="flex items-center justify-between mb-4">
-                            <span class="bg-navy-50 text-navy-800 p-3 rounded-lg group-hover:bg-campaignRed-50 group-hover:text-campaignRed-600 transition-all">
-                                <i data-lucide="car" class="w-6 h-6"></i>
-                            </span>
-                            <span class="text-gray-300 group-hover:text-campaignRed-600 transition-colors">
-                                <i data-lucide="arrow-up-right" class="w-5 h-5"></i>
-                            </span>
-                        </div>
-                        <h3 class="text-xl font-bold text-navy-800 mb-2 group-hover:text-campaignRed-600 transition-colors">Traffic & Transportation</h3>
-                        <p class="text-sm text-gray-600 leading-relaxed">
-                            Reducing local corridor bottlenecks, and designing safe pedestrian walkways near schools and local transit hubs.
-                        </p>
-                    </button>
+    <h3 class="text-xl font-bold text-navy-800 mb-4 group-hover:text-campaignRed-600 transition-colors">
+        Community Safety
+    </h3>
 
-                    <!-- Card 3: Transparency & Accountability -->
-                    <button type="button" onclick="openPriorityModal('transparency')" class="group text-left block bg-white border border-gray-100 rounded-xl p-6 shadow-sm hover:shadow-xl hover:border-navy-200 transition-all duration-300 transform hover:-translate-y-1 w-full">
-                        <div class="flex items-center justify-between mb-4">
-                            <span class="bg-navy-50 text-navy-800 p-3 rounded-lg group-hover:bg-campaignRed-50 group-hover:text-campaignRed-600 transition-all">
-                                <i data-lucide="eye" class="w-6 h-6"></i>
-                            </span>
-                            <span class="text-gray-300 group-hover:text-campaignRed-600 transition-colors">
-                                <i data-lucide="arrow-up-right" class="w-5 h-5"></i>
-                            </span>
-                        </div>
-                        <h3 class="text-xl font-bold text-navy-800 mb-2 group-hover:text-campaignRed-600 transition-colors">Transparency & Accountability</h3>
-                        <p class="text-sm text-gray-600 leading-relaxed">
-                            Open-book spending portals, robust external program audits, and dedicated resident review forums.
-                        </p>
-                    </button>
+    <ul class="space-y-2 text-sm text-gray-600">
+        <li>• Expand community policing</li>
+        <li>• Strengthen neighbourhood watch</li>
+        <li>• Improve emergency response</li>
+    </ul>
+</button>
 
-                    <!-- Card 4: Seniors & Families -->
-                    <button type="button" onclick="openPriorityModal('seniors')" class="group text-left block bg-white border border-gray-100 rounded-xl p-6 shadow-sm hover:shadow-xl hover:border-navy-200 transition-all duration-300 transform hover:-translate-y-1 w-full">
-                        <div class="flex items-center justify-between mb-4">
-                            <span class="bg-navy-50 text-navy-800 p-3 rounded-lg group-hover:bg-campaignRed-50 group-hover:text-campaignRed-600 transition-all">
-                                <i data-lucide="smile" class="w-6 h-6"></i>
-                            </span>
-                            <span class="text-gray-300 group-hover:text-campaignRed-600 transition-colors">
-                                <i data-lucide="arrow-up-right" class="w-5 h-5"></i>
-                            </span>
-                        </div>
-                        <h3 class="text-xl font-bold text-navy-800 mb-2 group-hover:text-campaignRed-600 transition-colors">Seniors & Families</h3>
-                        <p class="text-sm text-gray-600 leading-relaxed">
-                            Protecting multi-generational community services and ensuring language-diverse recreational programming is secure.
-                        </p>
-                    </button>
+<!-- Card 2: Traffic & Transportation -->
+<button type="button" onclick="openPriorityModal('traffic')" class="group text-left block bg-white border border-gray-100 rounded-xl p-6 shadow-sm hover:shadow-xl hover:border-navy-200 transition-all duration-300 transform hover:-translate-y-1 w-full">
+    <div class="flex items-center justify-between mb-4">
+        <span class="bg-navy-50 text-navy-800 p-3 rounded-lg group-hover:bg-campaignRed-50 group-hover:text-campaignRed-600 transition-all">
+            <i data-lucide="car" class="w-6 h-6"></i>
+        </span>
+        <span class="text-gray-300 group-hover:text-campaignRed-600 transition-colors">
+            <i data-lucide="arrow-up-right" class="w-5 h-5"></i>
+        </span>
+    </div>
 
-                    <!-- Card 5: Livable Richmond -->
-                    <button type="button" onclick="openPriorityModal('livable')" class="group text-left block bg-white border border-gray-100 rounded-xl p-6 shadow-sm hover:shadow-xl hover:border-navy-200 transition-all duration-300 transform hover:-translate-y-1 md:col-span-2 lg:col-span-1 w-full">
-                        <div class="flex items-center justify-between mb-4">
-                            <span class="bg-navy-50 text-navy-800 p-3 rounded-lg group-hover:bg-campaignRed-50 group-hover:text-campaignRed-600 transition-all">
-                                <i data-lucide="leaf" class="w-6 h-6"></i>
-                            </span>
-                            <span class="text-gray-300 group-hover:text-campaignRed-600 transition-colors">
-                                <i data-lucide="arrow-up-right" class="w-5 h-5"></i>
-                            </span>
-                        </div>
-                        <h3 class="text-xl font-bold text-navy-800 mb-2 group-hover:text-campaignRed-600 transition-colors">Livable Richmond</h3>
-                        <p class="text-sm text-gray-600 leading-relaxed">
-                            Preserving natural green ecosystems, agricultural lands, and ensuring balanced community growth.
-                        </p>
-                    </button>
+    <h3 class="text-xl font-bold text-navy-800 mb-4 group-hover:text-campaignRed-600 transition-colors">
+        Traffic & Transportation
+    </h3>
 
+    <ul class="space-y-2 text-sm text-gray-600">
+        <li>• Reduce traffic congestion</li>
+        <li>• Improve road safety</li>
+        <li>• Upgrade public transit</li>
+    </ul>
+</button>
+
+<!-- Card 3: Transparency & Accountability -->
+<button type="button" onclick="openPriorityModal('transparency')" class="group text-left block bg-white border border-gray-100 rounded-xl p-6 shadow-sm hover:shadow-xl hover:border-navy-200 transition-all duration-300 transform hover:-translate-y-1 w-full">
+    <div class="flex items-center justify-between mb-4">
+        <span class="bg-navy-50 text-navy-800 p-3 rounded-lg group-hover:bg-campaignRed-50 group-hover:text-campaignRed-600 transition-all">
+            <i data-lucide="eye" class="w-6 h-6"></i>
+        </span>
+        <span class="text-gray-300 group-hover:text-campaignRed-600 transition-colors">
+            <i data-lucide="arrow-up-right" class="w-5 h-5"></i>
+        </span>
+    </div>
+
+    <h3 class="text-xl font-bold text-navy-800 mb-4 group-hover:text-campaignRed-600 transition-colors">
+        Transparency & Accountability
+    </h3>
+
+    <ul class="space-y-2 text-sm text-gray-600">
+        <li>• Increase financial transparency</li>
+        <li>• Strengthen public accountability</li>
+        <li>• Put residents first</li>
+    </ul>
+</button>
+
+<!-- Card 4: Seniors & Families -->
+<button type="button" onclick="openPriorityModal('seniors')" class="group text-left block bg-white border border-gray-100 rounded-xl p-6 shadow-sm hover:shadow-xl hover:border-navy-200 transition-all duration-300 transform hover:-translate-y-1 w-full">
+    <div class="flex items-center justify-between mb-4">
+        <span class="bg-navy-50 text-navy-800 p-3 rounded-lg group-hover:bg-campaignRed-50 group-hover:text-campaignRed-600 transition-all">
+            <i data-lucide="smile" class="w-6 h-6"></i>
+        </span>
+        <span class="text-gray-300 group-hover:text-campaignRed-600 transition-colors">
+            <i data-lucide="arrow-up-right" class="w-5 h-5"></i>
+        </span>
+    </div>
+
+    <h3 class="text-xl font-bold text-navy-800 mb-4 group-hover:text-campaignRed-600 transition-colors">
+        Seniors & Families
+    </h3>
+
+    <ul class="space-y-2 text-sm text-gray-600">
+        <li>• Support seniors to age well</li>
+        <li>• Invest in youth programs</li>
+        <li>• Build stronger communities</li>
+    </ul>
+</button>
+
+<!-- Card 5: Livable Richmond -->
+<button type="button" onclick="openPriorityModal('livable')" class="group text-left block bg-white border border-gray-100 rounded-xl p-6 shadow-sm hover:shadow-xl hover:border-navy-200 transition-all duration-300 transform hover:-translate-y-1 md:col-span-2 lg:col-span-1 w-full">
+    <div class="flex items-center justify-between mb-4">
+        <span class="bg-navy-50 text-navy-800 p-3 rounded-lg group-hover:bg-campaignRed-50 group-hover:text-campaignRed-600 transition-all">
+            <i data-lucide="leaf" class="w-6 h-6"></i>
+        </span>
+        <span class="text-gray-300 group-hover:text-campaignRed-600 transition-colors">
+            <i data-lucide="arrow-up-right" class="w-5 h-5"></i>
+        </span>
+    </div>
+
+    <h3 class="text-xl font-bold text-navy-800 mb-4 group-hover:text-campaignRed-600 transition-colors">
+        Livable Richmond
+    </h3>
+
+    <ul class="space-y-2 text-sm text-gray-600">
+        <li>• Protect parks & green spaces</li>
+        <li>• Support smart growth</li>
+        <li>• Keep Richmond affordable</li>
+    </ul>
+</button>
                 </div>
             </div>
         </section>
