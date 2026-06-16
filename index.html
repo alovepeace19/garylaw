@@ -371,35 +371,82 @@
 .gary-hero-affiliation{
   display:none;
 }
-    
+}    
+</style>
+
+<!-- MOBILE HERO ONLY -->
+<section id="gary-mobile-hero">
+
+  <div class="gmh-photo">
+    <img
+      src="https://gary-law-richmond-demo.pages.dev/images/gary-hero.jpg"
+      alt="Gary Law for Richmond City Council"
+    >
+  </div>
+
+  <div class="gmh-content">
+    <h1>Gary Law</h1>
+
+    <div class="gmh-slogan">
+      LAW FOR SAFETY.<br>
+      LAW FOR RICHMOND.
+    </div>
+
+    <div class="gmh-gap"></div>
+
+    <p>
+      Former RCMP Senior Officer.<br>
+      Community Policing Award Recipient.
+    </p>
+
+    <div class="gmh-affiliation">
+      Advance Richmond Candidate
+    </div>
+
+    <div class="gmh-cta">
+      <a href="#priorities">Priorities</a>
+      <a href="#connect">Contact</a>
+    </div>
+  </div>
+
+</section>
+
+<style>
+/* hide mobile hero on desktop */
+#gary-mobile-hero{
+  display:none;
 }
 
-/* MOBILE */
-/* MOBILE HERO - CLEAN VERSION */
 @media (max-width:768px){
 
+  /* hide old hero on mobile */
   .gary-hero{
+    display:none !important;
+  }
+
+  #gary-mobile-hero{
+    display:block;
     position:relative;
     height:560px;
-    min-height:0;
     overflow:hidden;
+    background:#fff;
   }
 
-  .gary-hero-photo{
+  #gary-mobile-hero .gmh-photo{
     position:absolute;
     inset:0;
-    width:100%;
-    height:100%;
+    z-index:0;
   }
 
-  .gary-hero-photo img{
+  #gary-mobile-hero .gmh-photo img{
     width:100%;
     height:100%;
     object-fit:cover;
     object-position:78% top;
+    filter:brightness(1.05) contrast(1.05) saturate(.85) hue-rotate(-4deg);
   }
 
-  .gary-hero::after{
+  #gary-mobile-hero::after{
     content:"";
     position:absolute;
     inset:0;
@@ -407,58 +454,55 @@
     background:linear-gradient(
       to bottom,
       rgba(255,255,255,0) 0%,
-      rgba(255,255,255,.12) 36%,
-      rgba(255,255,255,.88) 68%,
+      rgba(255,255,255,.10) 34%,
+      rgba(255,255,255,.86) 65%,
       #fff 100%
     );
     pointer-events:none;
   }
 
-  .gary-hero-content{
+  #gary-mobile-hero .gmh-content{
     position:absolute;
     left:24px;
     right:24px;
-    bottom:34px;
+    bottom:28px;
     z-index:2;
-
-    padding:0;
-    max-width:none;
-    height:auto;
-    min-height:0;
-
-    display:block;
   }
 
-  .gary-hero-tag{
-    display:none;
-  }
-
-  .gary-hero-content h1{
+  #gary-mobile-hero h1{
+    color:#062B5B;
     font-size:36px;
     line-height:.95;
+    font-weight:900;
+    letter-spacing:-.04em;
+    text-transform:uppercase;
     margin:0 0 16px;
   }
 
-  .gary-hero-slogan{
-    padding-left:14px;
-    margin:0 0 58px;
+  #gary-mobile-hero .gmh-slogan{
+    color:#062B5B;
     border-left:5px solid #D72638;
-  }
-
-  .gary-hero-slogan h2{
+    padding-left:14px;
     font-size:20px;
     line-height:1.12;
-    margin:0;
+    font-weight:900;
+    letter-spacing:-.03em;
+    text-transform:uppercase;
   }
 
-  .gary-hero-content p{
+  #gary-mobile-hero .gmh-gap{
+    height:64px;
+  }
+
+  #gary-mobile-hero p{
+    color:#111827;
     font-size:14px;
-    line-height:1.48;
+    line-height:1.5;
+    font-weight:500;
     margin:0 0 22px;
   }
 
-  .gary-hero-affiliation{
-    display:block;
+  #gary-mobile-hero .gmh-affiliation{
     color:#D72638;
     font-size:11px;
     font-weight:800;
@@ -467,18 +511,35 @@
     margin:0 0 24px;
   }
 
-  .gary-hero-cta{
+  #gary-mobile-hero .gmh-cta{
     display:grid;
     grid-template-columns:1fr 1fr;
     gap:12px;
   }
 
-  .gary-hero-cta a{
+  #gary-mobile-hero .gmh-cta a{
     min-height:52px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-decoration:none;
+    text-transform:uppercase;
     font-size:12px;
+    font-weight:900;
+    letter-spacing:.08em;
+  }
+
+  #gary-mobile-hero .gmh-cta a:first-child{
+    background:#062B5B;
+    color:#fff;
+  }
+
+  #gary-mobile-hero .gmh-cta a:last-child{
+    background:#fff;
+    color:#062B5B;
+    border:2px solid #062B5B;
   }
 }
-    
 </style>
         
         <!-- SECTION 1.2: GARY CREDENTIALS / TRUST INDICATORS -->
