@@ -1136,15 +1136,6 @@
   transform:translateY(0);
 }
 
-.gary-timeline-section.is-photo-bottom .gt-photo-wrap{
-  position:absolute;
-  top:auto;
-  right:24px;
-  bottom:96px;
-  opacity:1;
-  transform:translateY(0);
-}
-
 .gt-photo{
   position:absolute;
   inset:0;
@@ -1337,23 +1328,19 @@
 
   function updateFixedPhoto(){
     if(window.innerWidth <= 768){
-      section.classList.remove("is-photo-fixed", "is-photo-bottom");
+      section.classList.remove("is-photo-fixed");
       return;
     }
 
     const rect = section.getBoundingClientRect();
     const photoHeight = photoWrap.offsetHeight;
     const topOffset = 140;
-    const bottomOffset = 96;
+    const bottomOffset = 120;
 
     if(rect.top <= topOffset && rect.bottom > photoHeight + topOffset + bottomOffset){
       section.classList.add("is-photo-fixed");
-      section.classList.remove("is-photo-bottom");
-    }else if(rect.bottom <= photoHeight + topOffset + bottomOffset){
-      section.classList.remove("is-photo-fixed");
-      section.classList.add("is-photo-bottom");
     }else{
-      section.classList.remove("is-photo-fixed", "is-photo-bottom");
+      section.classList.remove("is-photo-fixed");
     }
   }
 
@@ -1388,9 +1375,8 @@
     item.addEventListener("click", () => {
       if(window.innerWidth <= 768) return;
 
-      const index = Number(item.dataset.step);
-      scrollIndex = index;
-      showPhoto(index);
+      scrollIndex = Number(item.dataset.step);
+      showPhoto(scrollIndex);
     });
   });
 
@@ -1400,9 +1386,7 @@
   updateFixedPhoto();
 })();
 </script>
-
-
-
+        
         <!-- SECTION 4: POLICE COMMUNITY RELATIONS AWARD -->
         <section id="awards" class="bg-navy-800 text-white py-16 md:py-24">
             <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
