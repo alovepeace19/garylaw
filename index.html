@@ -374,23 +374,23 @@
 }    
 </style>
 
+<!-- MOBILE HERO ONLY -->
 <section class="gary-mobile-hero">
 
-  <div class="gmh-hero">
-    <div class="gmh-hero-text">
+  <div class="gmh-visual">
+    <div class="gmh-title">
       <h1>GARY<br>LAW</h1>
       <div class="gmh-red-line"></div>
-      <p>FOR RICHMOND CITY<br>COUNCIL</p>
+      <p>FOR RICHMOND<br> CITY COUNCIL</p>
     </div>
 
     <img
       src="https://garylaw.ca/images/gary-hero.jpg"
-      alt="Gary Law"
-      class="gmh-photo"
+      alt="Gary Law for Richmond City Council"
     >
   </div>
 
-  <div class="gmh-content">
+  <div class="gmh-body">
     <div class="gmh-slogan">
       <span></span>
       <h2>LAW FOR SAFETY.<br>LAW FOR RICHMOND.</h2>
@@ -398,36 +398,31 @@
 
     <div class="gmh-points">
       <div class="gmh-point">
-        <div class="gmh-icon" aria-hidden="true">
-          <i data-lucide="shield-check"></i>
-        </div>
-        <p>Former RCMP<br>Senior Officer</p>
+        <i data-lucide="shield-check"></i>
+        <span>Former RCMP Senior Officer</span>
       </div>
 
-      <div class="gmh-divider"></div>
-
       <div class="gmh-point">
-        <div class="gmh-icon" aria-hidden="true">
-          <i data-lucide="award"></i>
-        </div>
-        <p>Community Policing<br>Award Recipient</p>
+        <i data-lucide="award"></i>
+        <span>Community Policing Award</span>
       </div>
     </div>
 
     <div class="gmh-affiliation">
-      <div class="gmh-affiliation-line"></div>
-      <div class="gmh-affiliation-text">
-        <span>Advance Richmond</span>
+      <span></span>
+      <div>
+        <strong>Advance Richmond</strong>
         <small>Official Candidate</small>
       </div>
-      <div class="gmh-affiliation-line"></div>
+      <span></span>
     </div>
 
     <div class="gmh-cta">
-      <a href="#priorities" class="gmh-btn primary">PRIORITIES</a>
-      <a href="#contact" class="gmh-btn secondary">CONTACT</a>
+      <a href="#priorities" class="primary">PRIORITIES</a>
+      <a href="#connect" class="secondary">CONTACT</a>
     </div>
   </div>
+
 </section>
 
 <style>
@@ -437,311 +432,239 @@
 }
 
 .gary-mobile-hero{
-  width:100%;
-  max-width:480px;
-  margin:0 auto;
-  background:#fff;
-  color:#082f63;
-  font-family:Arial, Helvetica, sans-serif;
-  overflow:hidden;
-}
-
-/* Header */
-.gmh-header{
-  height:76px;
-  padding:14px 22px;
-  display:flex;
-  align-items:center;
-  justify-content:space-between;
-  background:#fff;
-}
-
-.gmh-logo{
-  font-size:23px;
-  line-height:1;
-  font-weight:900;
-  letter-spacing:-1px;
-  color:#082f63;
-}
-
-.gmh-sublogo{
-  margin-top:6px;
-  font-size:11px;
-  line-height:1;
-  font-weight:900;
-  letter-spacing:1px;
-  color:#f04b5f;
-}
-
-.gmh-menu{
-  width:30px;
-  height:24px;
-  padding:0;
-  border:0;
-  background:transparent;
-  display:flex;
-  flex-direction:column;
-  justify-content:space-between;
-  cursor:pointer;
-}
-
-.gmh-menu span{
-  display:block;
-  width:22px;
-  height:3px;
-  margin-left:auto;
-  border-radius:999px;
-  background:#082f63;
-}
-
-/* Hero */
-.gmh-hero{
-  position:relative;
-  height:220px;
-  overflow:hidden;
-  background:linear-gradient(105deg,#fff 0%,#f4f6fa 48%,#e8edf4 100%);
-}
-
-.gmh-hero:before{
-  content:"";
-  position:absolute;
-  inset:0;
-  z-index:1;
-  background:
-    linear-gradient(110deg,rgba(255,255,255,.94) 0%,rgba(255,255,255,.76) 35%,rgba(255,255,255,.08) 64%),
-    radial-gradient(circle at 0% 26%,rgba(8,47,99,.08),transparent 45%);
-}
-
-.gmh-hero-text{
-  position:absolute;
-  left:30px;
-  top:35px;
-  z-index:2;
-}
-
-.gmh-hero-text h1{
-  margin:0;
-  font-size:60px;
-  line-height:.88;
-  font-weight:900;
-  letter-spacing:-4px;
-  color:#282b63;
-}
-
-.gmh-red-line{
-  width:42px;
-  height:3px;
-  margin:15px 0 9px;
-  background:#f04b5f;
-}
-
-.gmh-hero-text p{
-  margin:0;
-  font-size:18px;
-  line-height:.95;
-  font-weight:900;
-  letter-spacing:-.5px;
-  color:#282b63;
-}
-
-.gmh-photo{
-  position:absolute;
-  bottom:0;
-  right:-18px;
-  z-index:0;
-  width:auto;
-  height:100%;
-  max-width:none;
-  object-fit:cover;
-  filter:brightness(1.06) contrast(1.03) saturate(1.02);
-}
-
-/* Content */
-.gmh-content{
-  padding:28px 30px 28px;
-  background:#fff;
-}
-
-.gmh-slogan{
-  display:flex;
-  align-items:flex-start;
-  gap:14px;
-  margin-bottom:28px;
-}
-
-.gmh-slogan span{
-  width:4px;
-  height:56px;
-  background:#f04b5f;
-  flex:0 0 auto;
-}
-
-.gmh-slogan h2{
-  margin:0;
-  font-size:24px;
-  line-height:1.14;
-  font-weight:900;
-  letter-spacing:-1px;
-  color:#082f63;
-}
-
-.gmh-points{
-  margin-left:22px;
-  margin-right:10px;
-}
-
-.gmh-point{
-  display:flex;
-  align-items:center;
-  gap:18px;
-}
-
-.gmh-icon{
-  width:58px;
-  height:58px;
-  border-radius:50%;
-  background:#f4f7fb;
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  flex:0 0 auto;
-  color:#082f63;
-}
-
-.gmh-icon svg{
-  width:30px;
-  height:30px;
-  stroke:#082f63;
-  stroke-width:2;
-}
-
-.gmh-point p{
-  margin:0;
-  font-size:17px;
-  line-height:1.2;
-  font-weight:800;
-  color:#26345a;
-}
-
-.gmh-divider{
-  height:1px;
-  background:#e5e9f0;
-  margin:20px 0 20px 76px;
-}
-
-/* Affiliation */
-.gmh-affiliation{
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  gap:14px;
-  margin:30px 0 32px;
-}
-
-.gmh-affiliation-line{
-  flex:1;
-  max-width:52px;
-  height:1px;
-  background:#d9e2ec;
-}
-
-.gmh-affiliation-text{
-  text-align:center;
-}
-
-.gmh-affiliation-text span{
-  display:block;
-  font-size:13px;
-  font-weight:900;
-  letter-spacing:.8px;
-  color:#e74d5c;
-  text-transform:uppercase;
-}
-
-.gmh-affiliation-text small{
-  display:block;
-  margin-top:4px;
-  font-size:11px;
-  font-weight:800;
-  letter-spacing:1px;
-  color:#7d8793;
-  text-transform:uppercase;
-}
-
-/* CTA */
-.gmh-cta{
-  display:grid;
-  grid-template-columns:1fr 1fr;
-  gap:18px;
-}
-
-.gmh-btn{
-  height:54px;
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  border-radius:4px;
-  text-decoration:none;
-  font-size:13px;
-  font-weight:900;
-  letter-spacing:.4px;
-}
-
-.gmh-btn.primary{
-  background:#082f63;
-  color:#fff;
-  border:2px solid #082f63;
-}
-
-.gmh-btn.secondary{
-  background:#fff;
-  color:#082f63;
-  border:2px solid #082f63;
+  display:none;
 }
 
 @media (max-width:768px){
+
   .gary-hero{
     display:none !important;
   }
-}
 
-/* Mobile only */
-@media (min-width:769px){
   .gary-mobile-hero{
-    display:none;
+    display:block;
+    width:100%;
+    max-width:480px;
+    margin:0 auto;
+    background:#fff;
+    overflow:hidden;
+    font-family:Arial, Helvetica, sans-serif;
+    color:#082f63;
+  }
+
+  .gmh-visual{
+    position:relative;
+    height:230px;
+    overflow:hidden;
+    background:linear-gradient(105deg,#fff 0%,#f4f6fa 50%,#e8edf4 100%);
+  }
+
+  .gmh-visual:before{
+    content:"";
+    position:absolute;
+    inset:0;
+    z-index:1;
+    background:
+      linear-gradient(110deg,rgba(255,255,255,.95) 0%,rgba(255,255,255,.75) 36%,rgba(255,255,255,.04) 65%),
+      radial-gradient(circle at 0% 25%,rgba(8,47,99,.08),transparent 46%);
+  }
+
+  .gmh-visual img{
+    position:absolute;
+    right:-26px;
+    bottom:0;
+    z-index:0;
+    width:auto;
+    height:100%;
+    max-width:none;
+    filter:brightness(1.06) contrast(1.03) saturate(1.02);
+  }
+
+  .gmh-title{
+    position:absolute;
+    left:28px;
+    top:34px;
+    z-index:2;
+  }
+
+  .gmh-title h1{
+    margin:0;
+    color:#282b63;
+    font-size:58px;
+    line-height:.88;
+    font-weight:900;
+    letter-spacing:-4px;
+  }
+
+  .gmh-red-line{
+    width:46px;
+    height:3px;
+    margin:16px 0 10px;
+    background:#d72638;
+  }
+
+  .gmh-title p{
+    margin:0;
+    color:#282b63;
+    font-size:18px;
+    line-height:.95;
+    font-weight:900;
+    letter-spacing:-.5px;
+  }
+
+  .gmh-body{
+    padding:28px 28px calc(90px + env(safe-area-inset-bottom));
+    background:#fff;
+  }
+
+  .gmh-slogan{
+    display:flex;
+    align-items:flex-start;
+    gap:14px;
+    margin-bottom:24px;
+  }
+
+  .gmh-slogan > span{
+    width:4px;
+    height:56px;
+    background:#d72638;
+    flex:0 0 auto;
+  }
+
+  .gmh-slogan h2{
+    margin:0;
+    color:#082f63;
+    font-size:24px;
+    line-height:1.14;
+    font-weight:900;
+    letter-spacing:-1px;
+  }
+
+  .gmh-points{
+    display:flex;
+    flex-direction:column;
+    gap:13px;
+    margin:0 0 26px;
+  }
+
+  .gmh-point{
+    display:flex;
+    align-items:center;
+    gap:11px;
+    color:#26345a;
+    font-size:16px;
+    line-height:1.3;
+    font-weight:800;
+  }
+
+  .gmh-point svg{
+    width:19px;
+    height:19px;
+    flex:0 0 auto;
+    color:#082f63;
+    stroke-width:2.2;
+  }
+
+  .gmh-affiliation{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:14px;
+    margin:24px 0 24px;
+    text-align:center;
+  }
+
+  .gmh-affiliation > span{
+    flex:1;
+    max-width:54px;
+    height:1px;
+    background:#d9e2ec;
+  }
+
+  .gmh-affiliation strong{
+    display:block;
+    color:#e74d5c;
+    font-size:13px;
+    line-height:1;
+    font-weight:900;
+    letter-spacing:1px;
+    text-transform:uppercase;
+  }
+
+  .gmh-affiliation small{
+    display:block;
+    margin-top:5px;
+    color:#7d8793;
+    font-size:11px;
+    line-height:1;
+    font-weight:800;
+    letter-spacing:1.6px;
+    text-transform:uppercase;
+  }
+
+  .gmh-cta{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:14px;
+  }
+
+  .gmh-cta a{
+    height:54px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-decoration:none;
+    font-size:13px;
+    font-weight:900;
+    letter-spacing:.7px;
+    border-radius:4px;
+  }
+
+  .gmh-cta .primary{
+    background:#082f63;
+    color:#fff;
+    border:2px solid #082f63;
+  }
+
+  .gmh-cta .secondary{
+    background:#fff;
+    color:#082f63;
+    border:2px solid #082f63;
   }
 }
 
-/* Small phones */
-@media (max-width:380px){
-  .gmh-header{
-    padding-left:18px;
-    padding-right:18px;
+@media (max-width:390px){
+  .gmh-visual{
+    height:220px;
   }
 
-  .gmh-hero-text{
+  .gmh-visual img{
+    right:-32px;
+  }
+
+  .gmh-title{
     left:24px;
+    top:32px;
   }
 
-  .gmh-hero-text h1{
+  .gmh-title h1{
     font-size:54px;
   }
 
-  .gmh-hero-text p{
+  .gmh-title p{
     font-size:16px;
   }
 
-  .gmh-content{
-    padding-left:24px;
-    padding-right:24px;
+  .gmh-body{
+    padding:26px 24px calc(86px + env(safe-area-inset-bottom));
   }
 
   .gmh-slogan h2{
     font-size:22px;
   }
 
-  .gmh-points{
-    margin-left:14px;
+  .gmh-point{
+    font-size:15px;
   }
 }
 </style>
