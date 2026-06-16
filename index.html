@@ -212,6 +212,170 @@
 
 </section>
 
+<!-- MOBILE HERO ONLY -->
+<section class="gary-mobile-hero">
+
+  <div class="gary-mobile-image-area">
+
+    <div class="gary-mobile-copy">
+
+      <div class="gary-mobile-tag">
+        Richmond City Council Candidate
+      </div>
+
+      <h1>Gary Law</h1>
+
+      <div class="gary-mobile-slogan">
+        <h2>
+          LAW FOR SAFETY.<br>
+          LAW FOR RICHMOND.
+        </h2>
+      </div>
+
+      <p>
+        Former RCMP Senior Officer.<br>
+        Community Policing Award Recipient.
+      </p>
+
+    </div>
+
+  </div>
+
+  <div class="gary-mobile-cta">
+    <a href="#priorities" class="gary-btn-primary">View Priorities</a>
+    <a href="#connect" class="gary-btn-secondary">Contact</a>
+  </div>
+
+</section>
+
+<style>
+.gary-mobile-hero{
+  display:none;
+}
+
+@media (max-width:768px){
+
+  .gary-mobile-hero{
+    display:block;
+    background:#fff;
+  }
+
+  .gary-mobile-image-area{
+    position:relative;
+    min-height:660px;
+    background-image:url("https://gary-law-richmond-demo.pages.dev/images/gary-hero.jpg");
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-position:68% top;
+    overflow:hidden;
+  }
+
+  .gary-mobile-copy{
+    position:absolute;
+    left:24px;
+    right:24px;
+    bottom:34px;
+    z-index:2;
+    max-width:520px;
+  }
+
+  .gary-mobile-tag{
+    display:inline-block;
+    background:#fff;
+    color:#D72638;
+    padding:12px 16px;
+    margin-bottom:22px;
+    font-size:11px;
+    font-weight:900;
+    letter-spacing:.16em;
+    text-transform:uppercase;
+    box-shadow:0 8px 24px rgba(15,23,42,.08);
+  }
+
+  .gary-mobile-copy h1{
+    margin:0 0 20px;
+    color:#062B5B;
+    font-size:56px;
+    line-height:.92;
+    font-weight:900;
+    letter-spacing:-.05em;
+    text-transform:uppercase;
+  }
+
+  .gary-mobile-slogan{
+    border-left:5px solid #D72638;
+    padding-left:16px;
+    margin-bottom:22px;
+  }
+
+  .gary-mobile-slogan h2{
+    margin:0;
+    color:#062B5B;
+    font-size:28px;
+    line-height:1.06;
+    font-weight:900;
+    letter-spacing:-.03em;
+    text-transform:uppercase;
+  }
+
+  .gary-mobile-copy p{
+    margin:0;
+    color:#111827;
+    font-size:16px;
+    line-height:1.5;
+    font-weight:500;
+  }
+
+  .gary-mobile-cta{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:14px;
+    padding:20px 24px 28px;
+    background:#fff;
+  }
+
+  .gary-mobile-cta a{
+    min-height:60px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    text-decoration:none;
+    text-transform:uppercase;
+    font-size:13px;
+    font-weight:900;
+    letter-spacing:.05em;
+  }
+
+  .gary-btn-primary{
+    background:#062B5B;
+    color:#fff;
+  }
+
+  .gary-btn-secondary{
+    background:#fff;
+    color:#062B5B;
+    border:2px solid #062B5B;
+  }
+}
+
+@media (max-width:480px){
+
+  .gary-mobile-image-area{
+    min-height:620px;
+    background-position:70% top;
+  }
+
+  .gary-mobile-copy h1{
+    font-size:50px;
+  }
+
+  .gary-mobile-slogan h2{
+    font-size:25px;
+  }
+}
+</style>
+
 <style>
   .gary-hero{
     width:100%;
