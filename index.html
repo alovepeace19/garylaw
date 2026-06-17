@@ -1439,103 +1439,290 @@
             </div>
         </section>
 
-        <!-- SECTION 5: COMMON QUESTIONS -->
-        <section id="faq" class="bg-gray-50 py-16 md:py-24 border-b border-gray-100">
-            <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-                
-                <header class="text-center space-y-4 mb-12">
-                    <span class="text-xs font-extrabold text-campaignRed-600 tracking-widest uppercase">FAQS</span>
-                    <h2 class="text-3xl font-extrabold text-navy-800 tracking-tight">Questions About Gary Law</h2>
-                </header>
+ <!-- SECTION 5: COMMON QUESTIONS -->
+<section id="faq" class="gl-faq-section">
+  <div class="gl-faq-container">
 
-                <div class="space-y-4">
-                    
-                    <!-- Accordion 1 -->
-                    <div class="border border-gray-100 rounded-lg bg-white overflow-hidden shadow-sm">
-                        <button type="button" onclick="toggleAccordion('faq-1')" class="w-full flex justify-between items-center p-5 text-left font-bold text-navy-800 hover:text-campaignRed-600 transition-colors" aria-expanded="false">
-                            <span>Who is Gary Law?</span>
-                            <span class="bg-gray-50 p-1.5 rounded-full" id="faq-1-icon">
-                                <i data-lucide="plus" class="w-4 h-4 text-navy-800"></i>
-                            </span>
-                        </button>
-                        <div id="faq-1" class="hidden">
-                            <div class="px-5 pb-5 pt-1 text-xs text-gray-600 leading-relaxed border-t border-gray-50 bg-slate-50">
-                                Gary Law is a former RCMP Senior Officer and a Richmond resident for over 30 years. Recognized with the RCMP Police Community Relations Award, he is a dedicated community mentor and safety advocate focused on transparent civic government.
-                            </div>
-                        </div>
-                    </div>
+    <header class="gl-faq-header">
+      <span>FAQs</span>
+      <h2>Questions You May Have</h2>
+    </header>
 
-                    <!-- Accordion 2 -->
-                    <div class="border border-gray-100 rounded-lg bg-white overflow-hidden shadow-sm">
-                        <button type="button" onclick="toggleAccordion('faq-2')" class="w-full flex justify-between items-center p-5 text-left font-bold text-navy-800 hover:text-campaignRed-600 transition-colors" aria-expanded="false">
-                            <span>Why is Gary Law running for Richmond City Council?</span>
-                            <span class="bg-gray-50 p-1.5 rounded-full" id="faq-2-icon">
-                                <i data-lucide="plus" class="w-4 h-4 text-navy-800"></i>
-                            </span>
-                        </button>
-                        <div id="faq-2" class="hidden">
-                            <div class="px-5 pb-5 pt-1 text-xs text-gray-600 leading-relaxed border-t border-gray-50 bg-slate-50">
-                                Gary is running to apply his professional experience in security management, neighborhood safety, and inter-organizational leadership directly to the local governance framework, ensuring city policies protect Richmond families.
-                            </div>
-                        </div>
-                    </div>
+    <div class="gl-faq-list">
 
-                    <!-- Accordion 3 -->
-                    <div class="border border-gray-100 rounded-lg bg-white overflow-hidden shadow-sm">
-                        <button type="button" onclick="toggleAccordion('faq-3')" class="w-full flex justify-between items-center p-5 text-left font-bold text-navy-800 hover:text-campaignRed-600 transition-colors" aria-expanded="false">
-                            <span>What are Gary Law's priorities?</span>
-                            <span class="bg-gray-50 p-1.5 rounded-full" id="faq-3-icon">
-                                <i data-lucide="plus" class="w-4 h-4 text-navy-800"></i>
-                            </span>
-                        </button>
-                        <div id="faq-3" class="hidden">
-                            <div class="px-5 pb-5 pt-1 text-xs text-gray-600 leading-relaxed border-t border-gray-50 bg-slate-50">
-                                His platform pillars focus on five core areas: community safety, efficient traffic and transit planning, open and accountable municipal spending, specialized support programs for seniors and families, and maintaining a livable, clean Richmond.
-                            </div>
-                        </div>
-                    </div>
+      <!-- FAQ 1 -->
+      <div class="gl-faq-item">
+        <button type="button" class="gl-faq-question" aria-expanded="false">
+          <span>Who is Gary Law?</span>
+          <svg class="faq-chevron" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M6 9L12 15L18 9" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </button>
+        <div class="gl-faq-answer">
+          <p>Gary Law is a former RCMP Senior Officer and a Richmond resident for over 30 years. Recognized with the RCMP Police Community Relations Award, he is a dedicated community mentor and safety advocate focused on transparent civic government.</p>
+        </div>
+      </div>
 
-                    <!-- Accordion 4 -->
-                    <div class="border border-gray-100 rounded-lg bg-white overflow-hidden shadow-sm">
-                        <button type="button" onclick="toggleAccordion('faq-4')" class="w-full flex justify-between items-center p-5 text-left font-bold text-navy-800 hover:text-campaignRed-600 transition-colors" aria-expanded="false">
-                            <span>What experience does Gary Law bring?</span>
-                            <span class="bg-gray-50 p-1.5 rounded-full" id="faq-4-icon">
-                                <i data-lucide="plus" class="w-4 h-4 text-navy-800"></i>
-                            </span>
-                        </button>
-                        <div id="faq-4" class="hidden">
-                            <div class="px-5 pb-5 pt-1 text-xs text-gray-600 leading-relaxed border-t border-gray-50 bg-slate-50">
-                                Gary brings decades of public service experience as a former RCMP Senior Officer, along with deep community roots in Richmond.
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <!-- Accordion 5 -->
-                    <div class="border border-gray-100 rounded-lg bg-white overflow-hidden shadow-sm">
-                        <button type="button" onclick="toggleAccordion('faq-5')" class="w-full flex justify-between items-center p-5 text-left font-bold text-navy-800 hover:text-campaignRed-600 transition-colors" aria-expanded="false">
-                            <span>What makes Gary Law different?</span>
-                            <span class="bg-gray-50 p-1.5 rounded-full" id="faq-5-icon">
-                                <i data-lucide="plus" class="w-4 h-4 text-navy-800"></i>
-                            </span>
-                        </button>
-                        <div id="faq-5" class="hidden">
-                            <div class="px-5 pb-5 pt-1 text-xs text-gray-600 leading-relaxed border-t border-gray-50 bg-slate-50">
-                                Gary is not a career politician. He brings real public safety experience, community service, and practical leadership.
-                            </div>
-                        </div>
-                    </div>
+      <!-- FAQ 2 -->
+      <div class="gl-faq-item">
+        <button type="button" class="gl-faq-question" aria-expanded="false">
+          <span>Why is Gary Law running for Richmond City Council?</span>
+          <svg class="faq-chevron" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M6 9L12 15L18 9" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </button>
+        <div class="gl-faq-answer">
+          <p>Gary is running to apply his professional experience in public safety, leadership, and community service to help build a safer, stronger, and more accountable Richmond.</p>
+        </div>
+      </div>
 
-                </div>
+      <!-- FAQ 3 -->
+      <div class="gl-faq-item">
+        <button type="button" class="gl-faq-question" aria-expanded="false">
+          <span>What are Gary Law's priorities?</span>
+          <svg class="faq-chevron" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M6 9L12 15L18 9" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </button>
+        <div class="gl-faq-answer">
+          <p>Gary's platform focuses on community safety, traffic and transportation, accountable government, support for seniors and families, and keeping Richmond clean, livable, and financially responsible.</p>
+        </div>
+      </div>
 
-                <div class="text-center pt-8">
-                    <button type="button" onclick="toggleAccordionListModal(true)" class="text-sm font-bold tracking-wider uppercase text-campaignRed-600 hover:text-campaignRed-700 transition-colors inline-flex items-center gap-2 border-b-2 border-campaignRed-600 pb-1 hover:border-campaignRed-700">
-                        View All Questions
-                        <i data-lucide="arrow-right" class="w-4 h-4"></i>
-                    </button>
-                </div>
+      <!-- FAQ 4 -->
+      <div class="gl-faq-item">
+        <button type="button" class="gl-faq-question" aria-expanded="false">
+          <span>What experience does Gary Law bring?</span>
+          <svg class="faq-chevron" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M6 9L12 15L18 9" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </button>
+        <div class="gl-faq-answer">
+          <p>Gary brings decades of leadership as a former RCMP Senior Officer, extensive experience in public safety, and over 30 years of involvement in the Richmond community.</p>
+        </div>
+      </div>
 
-            </div>
-        </section>
+      <!-- FAQ 5 -->
+      <div class="gl-faq-item">
+        <button type="button" class="gl-faq-question" aria-expanded="false">
+          <span>What makes Gary Law different?</span>
+          <svg class="faq-chevron" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M6 9L12 15L18 9" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </button>
+        <div class="gl-faq-answer">
+          <p>Gary is not a career politician. He brings real-world leadership, proven public safety experience, and a lifelong commitment to serving the Richmond community with integrity and accountability.</p>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="gl-faq-more">
+      <button type="button" onclick="toggleAccordionListModal(true)">
+        View All Questions
+        <svg class="faq-arrow" viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M5 12H19M13 6L19 12L13 18" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </button>
+    </div>
+
+  </div>
+</section>
+
+<style>
+.gl-faq-section,
+.gl-faq-section * {
+  box-sizing: border-box;
+}
+
+.gl-faq-section {
+  background: #ffffff;
+  padding: 72px 20px;
+  border-bottom: 1px solid #eef2f7;
+  font-family: inherit;
+}
+
+.gl-faq-container {
+  max-width: 880px;
+  margin: 0 auto;
+}
+
+.gl-faq-header {
+  text-align: center;
+  margin-bottom: 48px;
+}
+
+.gl-faq-header span {
+  display: block;
+  margin-bottom: 14px;
+  font-size: 12px;
+  font-weight: 900;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: #c1121f;
+}
+
+.gl-faq-header h2 {
+  margin: 0;
+  color: #0b1f3a;
+  font-size: clamp(30px, 4vw, 42px);
+  line-height: 1.08;
+  font-weight: 900;
+  letter-spacing: -0.04em;
+}
+
+.gl-faq-list {
+  border-top: 1px solid #d9e1ec;
+}
+
+.gl-faq-item {
+  border-bottom: 1px solid #d9e1ec;
+}
+
+.gl-faq-question {
+  width: 100%;
+  padding: 24px 0;
+  border: 0;
+  background: transparent;
+  cursor: pointer;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+
+  text-align: left;
+  color: #0b1f3a;
+  font-size: 18px;
+  line-height: 1.35;
+  font-weight: 800;
+  letter-spacing: -0.01em;
+}
+
+.gl-faq-question:hover {
+  color: #c1121f;
+}
+
+.faq-chevron {
+  width: 22px;
+  height: 22px;
+  flex-shrink: 0;
+  color: currentColor;
+  transition: transform 0.28s ease;
+}
+
+.gl-faq-question[aria-expanded="true"] .faq-chevron {
+  transform: rotate(180deg);
+}
+
+.gl-faq-answer {
+  display: none;
+  padding: 0 48px 26px 0;
+}
+
+.gl-faq-answer p {
+  margin: 0;
+  color: #526173;
+  font-size: 16px;
+  line-height: 1.75;
+}
+
+.gl-faq-item.is-open .gl-faq-answer {
+  display: block;
+}
+
+.gl-faq-more {
+  text-align: center;
+  padding-top: 40px;
+}
+
+.gl-faq-more button {
+  border: 0;
+  background: transparent;
+  cursor: pointer;
+  padding: 0 0 4px;
+
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+
+  color: #c1121f;
+  font-size: 13px;
+  font-weight: 900;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  border-bottom: 2px solid #c1121f;
+}
+
+.gl-faq-more button:hover {
+  color: #9f0f19;
+  border-color: #9f0f19;
+}
+
+.faq-arrow {
+  width: 16px;
+  height: 16px;
+  flex-shrink: 0;
+}
+
+@media (max-width: 640px) {
+  .gl-faq-section {
+    padding: 56px 20px;
+  }
+
+  .gl-faq-header {
+    margin-bottom: 36px;
+  }
+
+  .gl-faq-question {
+    padding: 22px 0;
+    font-size: 17px;
+    gap: 18px;
+  }
+
+  .gl-faq-answer {
+    padding: 0 36px 24px 0;
+  }
+
+  .gl-faq-answer p {
+    font-size: 15px;
+    line-height: 1.7;
+  }
+}
+</style>
+
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+  const faqSection = document.querySelector('#faq');
+  if (!faqSection) return;
+
+  const items = faqSection.querySelectorAll('.gl-faq-item');
+
+  items.forEach(function (item) {
+    const button = item.querySelector('.gl-faq-question');
+
+    if (!button) return;
+
+    button.addEventListener('click', function () {
+      const isOpen = item.classList.contains('is-open');
+
+      items.forEach(function (otherItem) {
+        otherItem.classList.remove('is-open');
+
+        const otherButton = otherItem.querySelector('.gl-faq-question');
+        if (otherButton) {
+          otherButton.setAttribute('aria-expanded', 'false');
+        }
+      });
+
+      if (!isOpen) {
+        item.classList.add('is-open');
+        button.setAttribute('aria-expanded', 'true');
+      }
+    });
+  });
+});
+</script>
 
         <!-- SECTION 6: CONNECT WITH GARY LAW -->
         <section id="connect" class="bg-white py-16 md:py-24 border-b border-gray-100">
