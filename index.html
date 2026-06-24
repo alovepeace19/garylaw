@@ -432,21 +432,22 @@
 }
 
 .gt-facts{
-    margin-top:18px;
-    display:flex;
-    flex-direction:column;
-    gap:16px;
+    margin-top:16px;
 }
 
 .gt-fact{
     position:relative;
-    margin:0;
-    padding-left:20px;
+    margin:0 0 8px;
+    padding:2px 0 2px 12px;
 
-    font-size:17px;
+    font-size:16px;
     font-weight:600;
-    line-height:1.55;
+    line-height:1.45;
     color:#163c73;
+}
+
+.gt-fact:last-child{
+    margin-bottom:0;
 }
 
 .gt-fact::before{
@@ -456,8 +457,9 @@
     top:2px;
     bottom:2px;
 
-    width:2px;
-    background:#c81d25;
+    width:5px;
+    border-radius:4px;
+    background:#d62828;
 }
 
 /* Hide on mobile */
