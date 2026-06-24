@@ -436,13 +436,15 @@
 }
 
 .gt-fact{
-    position:relative;
+    display:flex;
+    align-items:flex-start;
+    gap:9px;
+
     margin:0;
-    padding-left:18px;
 
     font-size:16px;
     font-weight:500;
-    line-height:1.7;
+    line-height:1.65;
     color:#163c73;
 }
 
@@ -450,17 +452,15 @@
     margin-top:4px;
 }
 
-.gt-fact::before{
-    content:"›"; /* U+203A */
-    position:absolute;
-    left:0;
-    top:50%;
-    transform:translateY(-50%);
+.gt-icon{
+    width:12px;
+    flex-shrink:0;
 
-    font-size:20px;
-    font-weight:700;
-    line-height:1;
     color:#d62828;
+    font-size:16px;
+    font-weight:700;
+    line-height:1.65;
+    text-align:left;
 }
     
 /* Hide on mobile */
@@ -922,9 +922,9 @@
     <h3>MILITARY SERVICE</h3>
 
     <div class="gt-facts">
-      <p class="gt-fact">Served in the Canadian Army Reserve.</p>
-      <p class="gt-fact">Promoted to the rank of Major.</p>
-      <p class="gt-fact">Commended for leadership and service.</p>
+      <p class="gt-fact"><span class="gt-icon">▸</span><span>Served in the Canadian Army Reserve.</span></p>
+      <p class="gt-fact"><span class="gt-icon">▸</span><span>Promoted to the rank of Major.</span></p>
+      <p class="gt-fact"><span class="gt-icon">▸</span><span>Commended for leadership and service.</span></p>
     </div>
   </article>
 
@@ -937,9 +937,9 @@
     <h3>RCMP LEADERSHIP</h3>
 
     <div class="gt-facts">
-      <p class="gt-fact">Senior RCMP leader.</p>
-      <p class="gt-fact">Founder of Richmond RCMP Community Day.</p>
-      <p class="gt-fact">Led security for high-profile events.</p>
+      <p class="gt-fact"><span class="gt-icon">▸</span><span>Senior RCMP leader.</span></p>
+      <p class="gt-fact"><span class="gt-icon">▸</span><span>Founder of Richmond RCMP Community Day.</span></p>
+      <p class="gt-fact"><span class="gt-icon">▸</span><span>Led security for high-profile events.</span></p>
     </div>
   </article>
 
@@ -952,9 +952,9 @@
     <h3>COMMUNITY LEADERSHIP</h3>
 
     <div class="gt-facts">
-      <p class="gt-fact">Mentored Royal Canadian Army Cadets.</p>
-      <p class="gt-fact">Supported BC Children's Hospital.</p>
-      <p class="gt-fact">Recognized by MLA Teresa Wat.</p>
+      <p class="gt-fact"><span class="gt-icon">▸</span><span>Mentored Royal Canadian Army Cadets.</span></p>
+      <p class="gt-fact"><span class="gt-icon">▸</span><span>Supported BC Children's Hospital.</span></p>
+      <p class="gt-fact"><span class="gt-icon">▸</span><span>Recognized by MLA Teresa Wat.</span></p>
     </div>
   </article>
 
@@ -967,9 +967,9 @@
     <h3>RICHMOND CITY COUNCIL CANDIDATE</h3>
 
     <div class="gt-facts">
-      <p class="gt-fact">Announced candidacy for Richmond City Council.</p>
-      <p class="gt-fact">Running with Advance Richmond.</p>
-      <p class="gt-fact">Ready to serve Richmond again.</p>
+      <p class="gt-fact"><span class="gt-icon">▸</span><span>Announced candidacy for Richmond City Council.</span></p>
+      <p class="gt-fact"><span class="gt-icon">▸</span><span>Running with Advance Richmond.</span></p>
+      <p class="gt-fact"><span class="gt-icon">▸</span><span>Ready to serve Richmond again.</span></p>
     </div>
   </article>
 
