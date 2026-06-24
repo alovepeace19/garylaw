@@ -431,34 +431,29 @@
     stroke-width:2;
 }
 
-.gt-facts{
-    margin-top:16px;
-}
-
 .gt-fact{
     position:relative;
-    margin:0 0 8px;
-    padding:2px 0 2px 12px;
+    margin:0;
+    padding-left:8px;
 
     font-size:16px;
     font-weight:600;
-    line-height:1.45;
+    line-height:1.6;
     color:#163c73;
 }
 
-.gt-fact:last-child{
-    margin-bottom:0;
+.gt-fact + .gt-fact{
+    margin-top:4px;
 }
 
 .gt-fact::before{
     content:"";
     position:absolute;
     left:0;
-    top:2px;
-    bottom:2px;
+    top:5px;
+    height:22px;
 
-    width:5px;
-    border-radius:4px;
+    width:3px;
     background:#d62828;
 }
 
