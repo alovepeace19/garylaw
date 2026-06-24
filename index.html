@@ -434,29 +434,32 @@
 .gt-fact{
     position:relative;
     margin:0;
-    padding-left:8px;
+    padding-left:10px;
 
     font-size:16px;
     font-weight:600;
-    line-height:1.6;
+    line-height:1.5;
     color:#163c73;
 }
 
 .gt-fact + .gt-fact{
-    margin-top:4px;
+    margin-top:6px;
 }
 
 .gt-fact::before{
     content:"";
     position:absolute;
+
     left:0;
-    top:5px;
-    height:22px;
+    top:50%;
+    transform:translateY(-50%);
 
     width:3px;
+    height:18px;
+
     background:#d62828;
 }
-
+    
 /* Hide on mobile */
 @media (max-width:768px){
   .gary-hero{
