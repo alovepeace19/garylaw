@@ -431,23 +431,46 @@
     stroke-width:2;
 }
 
-.gt-list{
-    margin:14px 0 0;
-    padding-left:20px;
+.gt-facts{
+    margin-top:18px;
     display:flex;
     flex-direction:column;
-    gap:8px;
-    color:#5b6470;
-    font-size:16px;
-    line-height:1.7;
+    gap:10px;
 }
 
-.gt-list li{
+.gt-fact{
+    position:relative;
     margin:0;
+    padding:14px 18px 14px 22px;
+
+    background:#f8fafc;
+    border:1px solid #e5e7eb;
+    border-radius:14px;
+
+    font-size:15px;
+    font-weight:600;
+    line-height:1.5;
+    color:#173d73;
+
+    transition:.25s ease;
 }
 
-.gt-list li::marker{
-    color:#1d4ed8;
+.gt-fact::before{
+    content:"";
+    position:absolute;
+    left:0;
+    top:10px;
+    bottom:10px;
+
+    width:4px;
+    background:#cf202f;
+    border-radius:999px;
+}
+
+.gt-item.is-active .gt-fact{
+    background:#fff;
+    border-color:#dbe7ff;
+    box-shadow:0 10px 30px rgba(15,23,42,.06);
 }
 
 /* Hide on mobile */
@@ -897,50 +920,70 @@
 
     <div class="gt-grid">
 
-      <!-- Timeline Text -->
-      <div class="gt-items">
+<!-- Timeline Text -->
+<div class="gt-items">
 
-        <article class="gt-item is-active" data-step="0">
-          <div class="gt-dot"></div>
-          <span class="gt-kicker">1989 - 2019</span>
-          <h3>MILITARY SERVICE</h3>
-            <ul class="gt-list">
-              <li>Served in the Canadian Army Reserve.</li>
-              <li>Promoted to the rank of Major.</li>
-              <li>Commended for leadership and service.</li>
-            </ul>
-        </article>
+  <!-- Military -->
+  <article class="gt-item is-active" data-step="0">
+    <div class="gt-dot"></div>
 
-        <article class="gt-item" data-step="1">
-          <div class="gt-dot"></div>
-          <span class="gt-kicker">1995 - 2015</span>
-          <h3>RCMP LEADERSHIP</h3>
-            <li>Senior RCMP leader.</li>
-            <li>Founder of Richmond RCMP Community Day.</li>
-            <li>Led security for high-profile events.</li>
-        </article>
+    <span class="gt-kicker">1989–2019</span>
 
-        <article class="gt-item" data-step="2">
-          <div class="gt-dot"></div>
-          <span class="gt-kicker">2016 – Present</span>
-          <h3>COMMUNITY LEADERSHIP</h3>
-            <li>Youth mentor with the Royal Canadian Army Cadets.</li>
-            <li>Fundraised for BC Children's Hospital.</li>
-            <li>Recognized by MLA Teresa Wat.</li>
-        </article>
+    <h3>MILITARY SERVICE</h3>
 
-        <article class="gt-item" data-step="3">
-          <div class="gt-dot"></div>
-          <span class="gt-kicker">2026</span>
-          <h3>RICHMOND CITY COUNCIL CANDIDATE</h3>
-            <ul class="gt-list">
-                <li>Announced candidacy for Richmond City Council.</li>
-                <li>Running with Advance Richmond.</li>
-                <li>Ready to serve Richmond again.</li>
-            </ul>
-        </article>
+    <div class="gt-facts">
+      <div class="gt-fact">Served in the Canadian Army Reserve.</div>
+      <div class="gt-fact">Promoted to the rank of Major.</div>
+      <div class="gt-fact">Commended for leadership and service.</div>
+    </div>
+  </article>
 
-      </div>
+  <!-- RCMP -->
+  <article class="gt-item" data-step="1">
+    <div class="gt-dot"></div>
+
+    <span class="gt-kicker">1995–2015</span>
+
+    <h3>RCMP LEADERSHIP</h3>
+
+    <div class="gt-facts">
+      <div class="gt-fact">Senior RCMP leader.</div>
+      <div class="gt-fact">Founder of Richmond RCMP Community Day.</div>
+      <div class="gt-fact">Led security for high-profile events.</div>
+    </div>
+  </article>
+
+  <!-- Community -->
+  <article class="gt-item" data-step="2">
+    <div class="gt-dot"></div>
+
+    <span class="gt-kicker">2016–Present</span>
+
+    <h3>COMMUNITY LEADERSHIP</h3>
+
+    <div class="gt-facts">
+      <div class="gt-fact">Mentored Royal Canadian Army Cadets.</div>
+      <div class="gt-fact">Supported BC Children's Hospital.</div>
+      <div class="gt-fact">Recognized by MLA Teresa Wat.</div>
+    </div>
+  </article>
+
+  <!-- Candidate -->
+  <article class="gt-item" data-step="3">
+    <div class="gt-dot"></div>
+
+    <span class="gt-kicker">2026</span>
+
+    <h3>RICHMOND CITY COUNCIL CANDIDATE</h3>
+
+    <div class="gt-facts">
+      <div class="gt-fact">Announced candidacy for Richmond City Council.</div>
+      <div class="gt-fact">Running with Advance Richmond.</div>
+      <div class="gt-fact">Ready to serve Richmond again.</div>
+    </div>
+  </article>
+
+</div>
 
       <!-- Fixed Photo -->
       <div class="gt-photo-wrap">
