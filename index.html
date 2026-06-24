@@ -432,19 +432,35 @@
 }
 
 .gt-facts{
-    margin-top:20px;
+    margin-top:18px;
 }
 
 .gt-fact{
+    position:relative;
     margin:0;
+    padding-left:18px;
+
     font-size:16px;
-    font-weight:600;
+    font-weight:500;
     line-height:1.7;
     color:#163c73;
 }
 
 .gt-fact + .gt-fact{
-    margin-top:6px;
+    margin-top:4px;
+}
+
+.gt-fact::before{
+    content:"›"; /* U+203A */
+    position:absolute;
+    left:0;
+    top:50%;
+    transform:translateY(-50%);
+
+    font-size:20px;
+    font-weight:700;
+    line-height:1;
+    color:#d62828;
 }
     
 /* Hide on mobile */
